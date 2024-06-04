@@ -1,6 +1,6 @@
-import ArtokuImage from './ArtokuImage.png'
-import HeroBg from './HeroBG.png'
-import IDSGadgetsImage from './IDSGadgetsImage.png'
+import ArtokuImage from '../images/ArtokuImage.png'
+import HeroBg from '../images/HeroBG.png'
+import IDSGadgetsImage from '../images/iDSGadgetsImage.png'
 
 export {
     ArtokuImage, HeroBg, IDSGadgetsImage,
