@@ -130,7 +130,7 @@ const Navbar = () => {
           variants={containerVariants}
           animate={containerControls}
           initial='close'
-          className='w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden'
+          className='w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden z-10'
         >
           <div className='mt-12 flex flex-col'>
             {navlinks.map((link, index) => (
