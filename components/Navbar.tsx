@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { navlinks } from "@/constants";
-import Link from "next/link";
-import Image from "next/image";
-import CustomButton from "./CustomButton";
-import { useEffect, useState } from "react";
-import { motion, useAnimationControls } from "framer-motion";
+import { navlinks } from '@/constants';
+import Link from 'next/link';
+import Image from 'next/image';
+import CustomButton from './CustomButton';
+import { useEffect, useState } from 'react';
+import { motion, useAnimationControls } from 'framer-motion';
 
 const Navbar = () => {
   /*Open navigation panel */
@@ -26,10 +26,10 @@ const Navbar = () => {
       }
     };
 
-    document.body.addEventListener("click", handleOutsideClick);
+    document.body.addEventListener('click', handleOutsideClick);
 
     return () => {
-      document.body.removeEventListener("click", handleOutsideClick);
+      document.body.removeEventListener('click', handleOutsideClick);
     };
   }, [open]);
 
@@ -41,10 +41,10 @@ const Navbar = () => {
       window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -53,16 +53,16 @@ const Navbar = () => {
   /*Animate navigation panel */
   const containerVariants = {
     close: {
-      width: "5rem",
+      width: '5rem',
       transition: {
-        type: "tween",
+        type: 'tween',
         duration: 0.3,
       },
     },
     open: {
-      width: "16rem",
+      width: '16rem',
       transition: {
-        type: "tween",
+        type: 'tween',
         duration: 0.3,
       },
     },
@@ -72,9 +72,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (open) {
-      containerControls.start("open");
+      containerControls.start('open');
     } else {
-      containerControls.start("close");
+      containerControls.start('close');
     }
   }, [open, containerControls]);
 
@@ -86,21 +86,21 @@ const Navbar = () => {
         className={`flex max-md:flex-row-reverse justify-between items-center w-full fixed padding 
         ${
           scrolled
-            ? "bg-slate-900 bg-opacity-50 backdrop-blur-lg border-b border-violet-500 transition ease-in-out duration-300"
-            : ""
+            ? 'bg-slate-900 bg-opacity-50 backdrop-blur-lg border-b border-violet-500 transition ease-in-out duration-300'
+            : ''
         }
         `}
       >
-        <Link href="#home" className="font-bold">
-          Dwr.<span className="text-primary_yellow">Dev</span>
+        <Link href='#home' className='font-bold'>
+          Dwr.<span className='text-primary_yellow'>Dev</span>
         </Link>
 
-        <div className="flex justify-center items-center gap-8 max-md:hidden">
+        <div className='flex justify-center items-center gap-8 max-md:hidden'>
           {navlinks.map((link, index) => (
             <div key={index}>
               <Link
                 href={link.url}
-                className="hover:text-slate-400 uppercase text-sm max-lg:text-[12px]"
+                className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
               >
                 {link.title}
               </Link>
@@ -108,18 +108,18 @@ const Navbar = () => {
           ))}
 
           <CustomButton
-            title="Download CV"
-            containerStyles="bg-slate-100 rounded-full px-3 py-1 hover:bg-slate-200 
-                active:bg-slate-100 max-md:hidden"
-            textStyles="text-slate-900 text-[12px]"
+            title='Download CV'
+            containerStyles='bg-slate-100 rounded-full px-3 py-1 hover:bg-slate-200 
+                active:bg-slate-100 max-md:hidden'
+            textStyles='text-slate-900 text-[12px]'
           />
         </div>
 
-        <div className="hidden max-md:flex">
-          <button className="flex flex-col gap-y-1" onClick={handleOpenNav}>
-            <div className="w-6 h-1 bg-white rounded-md"></div>
-            <div className="w-6 h-1 bg-white rounded-md"></div>
-            <div className="w-6 h-1 bg-white rounded-md"></div>
+        <div className='hidden max-md:flex'>
+          <button className='flex flex-col gap-y-1' onClick={handleOpenNav}>
+            <div className='w-6 h-1 bg-white rounded-md'></div>
+            <div className='w-6 h-1 bg-white rounded-md'></div>
+            <div className='w-6 h-1 bg-white rounded-md'></div>
           </button>
         </div>
       </nav>
@@ -129,23 +129,23 @@ const Navbar = () => {
         <motion.div
           variants={containerVariants}
           animate={containerControls}
-          initial="close"
-          className="w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden"
+          initial='close'
+          className='w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden'
         >
-          <div className="mt-12 flex flex-col">
+          <div className='mt-12 flex flex-col'>
             {navlinks.map((link, index) => (
-              <div key={index} className="hover:bg-gray-200 p-3 rounded">
+              <div key={index} className='hover:bg-gray-200 p-3 rounded'>
                 <Link
                   href={link.url}
                   onClick={handleOpenNav}
-                  className="text-black flex justify-start items-center gap-2 text-sm"
+                  className='text-black flex justify-start items-center gap-2 text-sm'
                 >
                   <Image
                     src={link.icon}
                     alt={link.title}
                     height={25}
                     width={25}
-                    className="object-contain"
+                    className='object-contain'
                   />
                   {link.title}
                 </Link>

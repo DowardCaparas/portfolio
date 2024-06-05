@@ -7,6 +7,8 @@ import PeronalInfoCard from './PeronalInfoCard';
 import Skills from './Skills';
 import Projects from './Projects';
 import ProjectCard from './ProjectCard';
+import Contact from './Contact';
+import TextComponent from './TextComponent';
 
 export {
     Navbar,
@@ -17,5 +19,7 @@ export {
     PeronalInfoCard,
     Skills,
     Projects,
-    ProjectCard
+    ProjectCard,
+    Contact,
+    TextComponent,
 }
