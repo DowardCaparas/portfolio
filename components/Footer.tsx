@@ -9,9 +9,7 @@ const Footer = () => {
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
           <h2 className='font-bold text-xl'>Dwr.<span className='text-primary_yellow'>Dev</span></h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea
-            magni explicabo officiis iste laudantium facere ullam quibusdam, quo
-            autem eius, nostrum
+          Empowering creativity and innovation, one line of code at a time. Let&apos;s build the future together.
           </p>
         </div>
 
@@ -28,13 +26,15 @@ const Footer = () => {
           <div className='flex gap-2'>
             {socials.map((item, index) => (
               <div key={index}>
-                <Image
-                  src={item.icon}
-                  alt='socal media icon'
-                  height={20}
-                  width={20}
-                  className='object-contain bg-white rounded-md w-full p-1 cursor-pointer hover:bg-slate-300'
-                />
+                <Link href={item.url}>
+                  <Image
+                    src={item.icon}
+                    alt='socal media icon'
+                    height={20}
+                    width={20}
+                    className='object-contain bg-white rounded-md w-full p-1 cursor-pointer hover:bg-slate-300'
+                  />
+                </Link>
               </div>
             ))}
           </div>

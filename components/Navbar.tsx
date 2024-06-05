@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 
 const Navbar = () => {
-
   /*Open navigation panel */
   const [open, setOpen] = useState(false);
 
@@ -27,13 +26,12 @@ const Navbar = () => {
       }
     };
 
-    document.body.addEventListener('click', handleOutsideClick);
+    document.body.addEventListener("click", handleOutsideClick);
 
     return () => {
-      document.body.removeEventListener('click', handleOutsideClick);
+      document.body.removeEventListener("click", handleOutsideClick);
     };
   }, [open]);
-
 
   /*Add background when scrolled */
   const [scrolled, setScrolled] = useState(false);
@@ -119,15 +117,14 @@ const Navbar = () => {
 
         <div className="hidden max-md:flex">
           <button className="flex flex-col gap-y-1" onClick={handleOpenNav}>
-
-            <div className='w-6 h-1 bg-white rounded-md'></div>
-            <div className='w-6 h-1 bg-white rounded-md'></div>
-            <div className='w-6 h-1 bg-white rounded-md'></div>
-
+            <div className="w-6 h-1 bg-white rounded-md"></div>
+            <div className="w-6 h-1 bg-white rounded-md"></div>
+            <div className="w-6 h-1 bg-white rounded-md"></div>
           </button>
         </div>
       </nav>
 
+      {/*Nav container panel*/}
       {open && (
         <motion.div
           variants={containerVariants}
@@ -135,22 +132,21 @@ const Navbar = () => {
           initial="close"
           className="w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden"
         >
-          <div className="mt-4 flex flex-col gap-4 ">
+          <div className="mt-12 flex flex-col">
             {navlinks.map((link, index) => (
-              <div key={index} className="flex justify-start item gap-2">
-                <Image
-                  src={link.icon}
-                  alt={link.title}
-                  height={20}
-                  width={20}
-                  className="object-contain"
-                />
-
+              <div key={index} className="hover:bg-gray-200 p-3 rounded">
                 <Link
                   href={link.url}
                   onClick={handleOpenNav}
-                  className="text-black"
+                  className="text-black flex justify-start items-center gap-2 text-sm"
                 >
+                  <Image
+                    src={link.icon}
+                    alt={link.title}
+                    height={25}
+                    width={25}
+                    className="object-contain"
+                  />
                   {link.title}
                 </Link>
               </div>

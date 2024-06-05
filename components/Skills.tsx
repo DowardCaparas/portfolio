@@ -7,12 +7,12 @@ const Skills = () => {
       <h2 className='text-xl w-full border-b border-gray-500'>Skills</h2>
 
       {skills.map((item, index) => (
-        <div key={index} className='flex flex-col justify-center items-center'>
-          <div className='py-10'>
+        <div key={index} className='flex flex-col justify-center items-center mt-14'>
+          <div className='mb-5'>
             <h3>{item.title}</h3>
           </div>
 
-          <div className='grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 gap-6'>
+          <div className='grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 gap-4'>
             {item.lists.map((item, index) => (
               <div
                 key={index}

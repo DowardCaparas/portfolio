@@ -14,7 +14,7 @@ export const navlinks = [
 ];
 
 export const socials = [
-    {icon: facebookIcon, url: '#'},
+    {icon: facebookIcon, url: 'https://www.facebook.com/doward.caparas?mibextid=ZbWKwL'},
     {icon: twitterIcon, url: '#'},
     {icon: instagramIcon, url: '#'},
     {icon: linkedinIcon, url: '#'},
@@ -39,7 +39,7 @@ export const skills = [
             {name: 'Framer', icon: framerIcon },
             {name: 'HTML', icon: htmlIcon },
             {name: 'CSS', icon: cssIcon },
-            {name: 'Boorstrap', icon: bootstrapIcon }
+            {name: 'Bootstrap', icon: bootstrapIcon }
         ],
     },
 

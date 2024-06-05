@@ -9,7 +9,7 @@ interface ProjectList {
 
 const ProjectCard = ({ projects }: ProjectList) => {
   return (
-    <div className='w-full grid sm:grid-cols-2 grid-cols-1 gap-4 my-28'>
+    <div className='w-full grid sm:grid-cols-2 grid-cols-1 gap-4 mb-28'>
       {projects.map((item, index) => (
         <div
           key={index}
@@ -26,13 +26,13 @@ const ProjectCard = ({ projects }: ProjectList) => {
 
           {/*Details*/}
 
-          <div className=' p-5 gap-4 flex flex-col'>
+          <div className='p-3 gap-4 flex flex-col'>
             <div className='text-primary_black max-lg:text-sm'>
               <h3 className=' font-medium'>{item.name}</h3>
               <p className='text-slate-800 max-lg:text-[12px]'>{item.description}</p>
             </div>
 
-            <div className='hover:bg-slate-300 p-2 rounded'>
+            <div className='bg-gray-300 hover:bg-primary_gray active:bg-gray-300 p-2 rounded'>
               <Link
                 href={item.url}
                 className='flex justify-center items-center gap-2'
