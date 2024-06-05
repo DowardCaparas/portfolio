@@ -26,7 +26,7 @@ const Hero = () => {
     
       </div>
 
-      <div className='w-full md:w-1/2 flex justify-end items-end'>
+      <div className='w-full md:w-1/2 flex justify-end items-end hero-image-container'>
           <Image 
             src={HeroBg}
             alt='Doward Caparas'

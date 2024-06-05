@@ -3,7 +3,7 @@ import TextComponent from "./TextComponent";
 
 const Contact = () => {
   return (
-    <div className="w-full container__padding my-28">
+    <div id='contact' className="w-full container__padding">
       <div className="flex flex-col justify-center items-center gap-2 mb-10">
         <h2 className="text-2xl font-medium">Contact me</h2>
         <div className="border-r h-5 border-primary_blue"></div>

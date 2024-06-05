@@ -12,6 +12,8 @@ export interface PeronalInfoCardProps {
 export interface ProjectCardProps {
     name: string;
     image: string;
+    category: string;
+    date: string;
     description: string;
     url: string;
 }

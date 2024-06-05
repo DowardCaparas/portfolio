@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer id='contact' className='container__padding py-16'>
+    <footer className='container__padding py-16'>
       <div className='flex max-md:flex-col justify-between items-start gap-y-10'>
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
           <h2 className='font-bold text-xl'>Dwr.<span className='text-primary_yellow'>Dev</span></h2>

@@ -12,7 +12,7 @@ const PeronalInfoCard = ({ info }: InfoCard) => {
         {info.map((item, index) => (
           <div
             key={index}
-            className='bg-slate-300 rounded w-full text-primary_black p-3'
+            className='bg-white rounded w-full text-primary_black p-3'
           >
             <h3>{item.title}</h3>
             <p className='text-[12px] md:ext-sm'>{item.label}</p>

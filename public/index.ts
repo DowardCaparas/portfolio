@@ -20,9 +20,11 @@ import service from './service.svg'
 import tailwindIcon from './tailwindIcon.svg'
 import typescripticon from './typescripticon.svg'
 import twitterIcon from './twitterIcon.svg'
+import chevrondown from './chevrondown.svg'
+import chevronup from './chevronup.svg'
 
 export {
     arrowup, bootstrapIcon, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
     htmlIcon, info, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, phone,
-    photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon
+    photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon, chevrondown, chevronup
 }
