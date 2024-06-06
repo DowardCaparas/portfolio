@@ -9,7 +9,7 @@ const Hero = () => {
      
       <div className='flex flex-col justify-start items-start gap-4 md:w-1/2'>
 
-          <p>Hello I&apos;m</p>
+          <p className='dark:text-blue-800'>Hello I&apos;m</p>
           <h3 className='text-xl text-light_purple'>Dounhuward B. Caparas</h3>
           <h1 className='md:text-6xl text-4xl font-semibold'>Frontend Web Developer</h1>
           <p>I&apos;m dedicated to crafting innovative solutions through coding and design.
