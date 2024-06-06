@@ -84,8 +84,8 @@ const Navbar = () => {
   // Function to handle the download
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/CAPARAS_DOUNHUWARD-RESUME.pdf';
-    link.download = 'CAPARAS_DOUNHUWARD-RESUME.pdf';
+    link.href = '/CAPARAS_DOUNHUWARD_RESUME.pdf';
+    link.download = 'CAPARAS_DOUNHUWARD_RESUME.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
