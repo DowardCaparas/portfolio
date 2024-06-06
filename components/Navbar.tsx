@@ -27,15 +27,9 @@ const Navbar = () => {
     };
 
     document.body.addEventListener('click', handleOutsideClickOrTouch);
-    document.body.addEventListener('touchstart', handleOutsideClickOrTouch);
-    document.body.addEventListener('touchmove', handleOutsideClickOrTouch);
-    document.body.addEventListener('touchend', handleOutsideClickOrTouch);
 
     return () => {
       document.body.removeEventListener('click', handleOutsideClickOrTouch);
-      document.body.removeEventListener('touchstart', handleOutsideClickOrTouch);
-      document.body.removeEventListener('touchmove', handleOutsideClickOrTouch);
-      document.body.removeEventListener('touchend', handleOutsideClickOrTouch);
     };
   }, [open]);
 
