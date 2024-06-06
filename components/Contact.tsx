@@ -1,12 +1,14 @@
-import React from "react";
-import TextComponent from "./TextComponent";
+import Link from 'next/link';
+import Image from 'next/image';
+import TextComponent from './TextComponent';
+import { envelope } from '@/public';
 
 const Contact = () => {
   return (
-    <div id='contact' className="w-full container__padding">
-      <div className="flex flex-col justify-center items-center gap-2 mb-10">
-        <h2 className="text-2xl font-medium">Contact me</h2>
-        <div className="border-r h-5 border-primary_blue"></div>
+    <div id='contact' className='w-full container__padding'>
+      <div className='flex flex-col justify-center items-center gap-2 mb-10'>
+        <h2 className='text-2xl font-medium'>Contact me</h2>
+        <div className='border-r h-5 border-primary_blue'></div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
           itaque dolorem ea deleniti ut optio, repudiandae voluptates repellat
@@ -15,17 +17,28 @@ const Contact = () => {
       </div>
 
       {/*container */}
-      <div className="flex max-md:flex-col justify-between items-start gap-6">
+      <div className='flex max-md:flex-col justify-between items-start gap-6'>
         {/*Left Side Column 1 */}
-        <div className="flex flex-col justify-start items-start gap-6">
-          <div className="flex flex-col justify-start items-start">
-            <h3>Have a Question?</h3>
+        <div className='flex flex-col justify-start items-start gap-6'>
+          <div className='flex flex-col justify-start items-start gap-1'>
+
+            <h3 className='mb-2'>Have a Question?</h3>
+
             <p>I am here to help you</p>
-            <p className="text-primary_purple">Email me at</p>
+              <Link href='mailto:caparasdounhuward@gmail.com' className='flex gap-2 items-center'>
+                <Image
+                  src={envelope}
+                  alt='envelope'
+                  height={25}
+                  width={25}
+                  className='object-contain bg-white rounded'
+                />
+                <p className='text-primary_purple'>Send us an email</p>
+              </Link>
           </div>
 
-          <div className="flex flex-col justify-start items-start gap-4">
-            <h3>Current Location</h3>
+          <div className='flex flex-col justify-start items-start'>
+            <h3 className='mb-2'>Current Location</h3>
             <p>Naic, Cavite</p>
           </div>
         </div>

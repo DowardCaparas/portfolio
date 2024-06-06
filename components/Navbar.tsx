@@ -80,6 +80,17 @@ const Navbar = () => {
 
   /*End of Animating navigation panel */
 
+
+  // Function to handle the download
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/CAPARAS_DOUNHUWARD-RESUME.pdf';
+    link.download = 'CAPARAS_DOUNHUWARD-RESUME.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <nav
@@ -107,12 +118,13 @@ const Navbar = () => {
             </div>
           ))}
 
-          <CustomButton
-            title='Download CV'
-            containerStyles='bg-slate-100 rounded-full px-3 py-1 hover:bg-slate-200 
-                active:bg-slate-100 max-md:hidden'
-            textStyles='text-slate-900 text-[12px]'
-          />
+            <CustomButton
+              title='Download CV'
+              containerStyles='bg-slate-100 rounded-full px-3 py-1 hover:bg-slate-200 
+                    active:bg-slate-100 max-md:hidden'
+              textStyles='text-slate-900 text-[12px]'
+              handleClick={handleDownload}
+            />
         </div>
 
         <div className='hidden max-md:flex'>
