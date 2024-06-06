@@ -16,14 +16,14 @@ const Skills = () => {
             {item.lists.map((item, index) => (
               <div
                 key={index}
-                className='flex flex-col justify-center items-center p-2 gap-2 bg-white rounded'
+                className='flex flex-col justify-center items-center p-2 gap-2 bg-primary_gray rounded'
               >
                 <Image
                   src={item.icon}
                   alt={item.name}
                   height={50}
                   width={50}
-                  className='object-contain bg-white rounded'
+                  className='object-contain rounded'
                 />
                 <p className='text-sm text-primary_black'>{item.name}</p>
               </div>

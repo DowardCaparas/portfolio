@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 214, 219, 220;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -25,27 +19,6 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-.hero-image-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-image-container::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px; /* Adjust the height as needed */
-  background: linear-gradient(to top, rgba(3, 0, 19, 0.5), rgba(3, 0, 19, 0));
-}
-
-.hero-image-container img {
-  position: relative;
-  z-index: 0;
-}
-
 
 @layer utilities {
   .text-balance {

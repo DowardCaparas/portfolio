@@ -9,6 +9,7 @@ import Projects from './Projects';
 import ProjectCard from './ProjectCard';
 import Contact from './Contact';
 import TextComponent from './TextComponent';
+import ViewCV from './ViewCV';
 
 export {
     Navbar,
@@ -22,4 +23,5 @@ export {
     ProjectCard,
     Contact,
     TextComponent,
+    ViewCV,
 }

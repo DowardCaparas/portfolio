@@ -24,7 +24,8 @@ const ProjectCard = ({ projects }: ProjectList) => {
   return (
     <div className='w-full container__padding flex flex-col gap-3'>
       {projects.map((item, index) => (
-        <div key={index} className='flex max-md:flex-col justify-start items-start gap-4 p-5 rounded bg-white'>
+        <div key={index} className='flex max-md:flex-col justify-start items-start 
+        gap-4 p-5 rounded bg-primary_gray'>
 
           <Image 
               src={item.image}

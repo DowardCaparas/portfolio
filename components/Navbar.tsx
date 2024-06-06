@@ -3,9 +3,9 @@
 import { navlinks } from '@/constants';
 import Link from 'next/link';
 import Image from 'next/image';
-import CustomButton from './CustomButton';
 import { useEffect, useState } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
+import ViewCV from './ViewCV';
 
 const Navbar = () => {
   /*Open navigation panel */
@@ -103,37 +103,48 @@ const Navbar = () => {
                 href={link.url}
                 className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
               >
-                {link.title}
+                <span className={`
+                    ${
+                      scrolled
+                        ? 'text-white transition ease-in-out duration-300'
+                        : ''
+                    }  
+                `}>
+                      {link.title}
+                </span>
+                
               </Link>
             </div>
           ))}
-            <Link href='/CAPARAS_DOUNHUWARD_RESUME.pdf'>
-              <CustomButton
-                title='Download CV'
-                containerStyles='bg-slate-100 rounded-full px-3 py-1 hover:bg-slate-200 
-                      active:bg-slate-100 max-md:hidden'
-                textStyles='text-slate-900 text-[12px]'
-              />
-            </Link>
+
+      {/*Nav View CV Button */}
+            <ViewCV />
+
         </div>
 
         <div className='hidden max-md:flex'>
-          <button className='flex flex-col gap-y-1' onClick={handleOpenNav}>
-            <div className='w-6 h-1 bg-white rounded-md'></div>
-            <div className='w-6 h-1 bg-white rounded-md'></div>
-            <div className='w-6 h-1 bg-white rounded-md'></div>
+          <button 
+            className='flex flex-col gap-y-1 bg-primary_gray p-2 rounded
+             hover:bg-gray-300 active:bg-primary_gray' 
+            onClick={handleOpenNav}>
+
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
           </button>
         </div>
       </nav>
 
-      {/*Nav container panel*/}
+      {/*Nav container panel */}
       {open && (
         <motion.div
           variants={containerVariants}
           animate={containerControls}
           initial='close'
-          className='w-2/3 h-full bg-slate-100 padding fixed left-0 items-start md:hidden z-10'
+          className='w-2/3 h-full bg-white padding fixed left-0 
+          md:hidden z-10 flex flex-col justify-between border-r border-gray-300'
         >
+
           <div className='mt-12 flex flex-col'>
             {navlinks.map((link, index) => (
               <div key={index} className='hover:bg-gray-200 p-3 rounded'>
@@ -149,11 +160,20 @@ const Navbar = () => {
                     width={25}
                     className='object-contain'
                   />
+
                   {link.title}
+
                 </Link>
               </div>
             ))}
           </div>
+
+           {/*Nav View CV Button */}
+           <div className='mb-5'>
+               <ViewCV />
+           </div>
+           
+
         </motion.div>
       )}
     </>

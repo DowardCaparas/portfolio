@@ -9,7 +9,6 @@ export const navlinks = [
     {title: 'About', url: '#about', icon: info },
     {title: 'Services', url: '#services', icon: service },
     {title: 'Projects', url: '#projects', icon: caseIcon },
-    {title: 'Resume', url: '#resume', icon: fileIcon },
     {title: 'Contact', url: '#contact', icon: phone },
 ];
 
