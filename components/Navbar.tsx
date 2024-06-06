@@ -19,17 +19,23 @@ const Navbar = () => {
 
   /*Tap anywhere to close the nav container */
   useEffect(() => {
-    const handleOutsideClick = () => {
+    const handleOutsideClickOrTouch = () => {
       if (open) {
-        // If navigation is open and click is outside of navigation, close it
+        // If navigation is open and the interaction is outside of navigation, close it
         setOpen((prev) => !prev);
       }
     };
 
-    document.body.addEventListener('click', handleOutsideClick);
+    document.body.addEventListener('click', handleOutsideClickOrTouch);
+    document.body.addEventListener('touchstart', handleOutsideClickOrTouch);
+    document.body.addEventListener('touchmove', handleOutsideClickOrTouch);
+    document.body.addEventListener('touchend', handleOutsideClickOrTouch);
 
     return () => {
-      document.body.removeEventListener('click', handleOutsideClick);
+      document.body.removeEventListener('click', handleOutsideClickOrTouch);
+      document.body.removeEventListener('touchstart', handleOutsideClickOrTouch);
+      document.body.removeEventListener('touchmove', handleOutsideClickOrTouch);
+      document.body.removeEventListener('touchend', handleOutsideClickOrTouch);
     };
   }, [open]);
 
@@ -92,7 +98,7 @@ const Navbar = () => {
         }
         `}
       >
-        <Link href='#home' className='font-bold'>
+        <Link href='#home' className='font-bold' aria-label='Home' >
           Dwr.<span className='text-primary_yellow'>Dev</span>
         </Link>
 
@@ -102,6 +108,7 @@ const Navbar = () => {
               <Link
                 href={link.url}
                 className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
+                aria-label='Link'
               >
                 <span className={`
                     ${
@@ -131,6 +138,7 @@ const Navbar = () => {
               <div className='w-6 h-1 rounded-md bg-primary_black'></div>
               <div className='w-6 h-1 rounded-md bg-primary_black'></div>
               <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+              
           </button>
         </div>
       </nav>
@@ -152,6 +160,7 @@ const Navbar = () => {
                   href={link.url}
                   onClick={handleOpenNav}
                   className='text-black flex justify-start items-center gap-2 text-sm'
+                  aria-label='Link'
                 >
                   <Image
                     src={link.icon}

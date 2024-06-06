@@ -10,9 +10,8 @@ const Contact = () => {
         <h2 className='text-2xl font-medium'>Contact me</h2>
         <div className='border-r h-5 border-primary_blue'></div>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
-          itaque dolorem ea deleniti ut optio, repudiandae voluptates repellat
-          ab odio in
+        We&apos;d love to hear from you! Whether you have a question, feedback, 
+        or just want to say hello, feel free to reach me out.
         </p>
       </div>
 
@@ -25,7 +24,12 @@ const Contact = () => {
             <h3 className='mb-2'>Have a Question?</h3>
 
             <p>I am here to help you</p>
-              <Link href='mailto:caparasdounhuward@gmail.com' className='flex gap-2 items-center'>
+              <Link 
+                href='mailto:caparasdounhuward@gmail.com' 
+                className='flex gap-2 items-center'
+                aria-label='Email'
+              >
+                
                 <Image
                   src={envelope}
                   alt='envelope'
@@ -33,7 +37,7 @@ const Contact = () => {
                   width={25}
                   className='object-contain bg-white rounded'
                 />
-                <p className='text-primary_purple'>Send us an email</p>
+                <p className='text-primary_purple'>Send me an email</p>
               </Link>
           </div>
 

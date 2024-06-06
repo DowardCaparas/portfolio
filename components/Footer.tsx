@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='flex flex-col justify-start items-start gap-2'>
           {navlinks.map((link, index) => (
             <div key={index}>
-              <Link href={link.url}>{link.title}</Link>
+              <Link href={link.url} aria-label='Link'>{link.title} </Link>
             </div>
           ))}
         </div>

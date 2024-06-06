@@ -8,6 +8,7 @@ const CustomButton = ({title, containerStyles, textStyles, handleClick}: CustomB
       type='button'
       className={containerStyles}
       onClick={handleClick}
+      aria-label={title}
    >
       <span className={textStyles}>
           {title}        
