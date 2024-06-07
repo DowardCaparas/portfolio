@@ -99,7 +99,7 @@ const Navbar = () => {
             Dwr.<span className='text-primary_yellow'>Dev</span>
           </Link>
 
-        {/*Hamburger icon */}
+          {/*Hamburger icon */}
           <div className='hidden max-md:flex'>
             <button
               className='flex flex-col gap-y-1 bg-primary_gray p-2 rounded
@@ -113,7 +113,7 @@ const Navbar = () => {
             </button>
           </div>
 
-        {/*Links */}
+          {/*Links */}
           <div className='flex justify-center items-center gap-8 max-md:hidden'>
             {navlinks.map((link, index) => (
               <div key={index}>
@@ -138,7 +138,7 @@ const Navbar = () => {
         </div>
 
         <div className='flex justify-center items-center gap-6'>
-          
+
 
           {/*Nav View CV Button */}
           <ViewCV />
@@ -147,41 +147,46 @@ const Navbar = () => {
 
       </nav>
 
-      {/*Nav container panel */}
+      {/* Nav container panel */}
       {open && (
-        <motion.div
-          variants={containerVariants}
-          animate={containerControls}
-          initial='close'
-          className='w-2/3 h-full bg-white padding fixed left-0 md:hidden z-10 border-r border-gray-300'
-        >
-
-          <div className='mt-12 flex flex-col'>
-            {navlinks.map((link, index) => (
-              <div key={index} className='hover:bg-gray-200 p-3 rounded'>
-                <Link
-                  href={link.url}
-                  onClick={handleOpenNav}
-                  className='text-black flex justify-start items-center gap-2 text-sm'
-                  aria-label='Link'
-                >
-                  <Image
-                    src={link.icon}
-                    alt={link.title}
-                    height={25}
-                    width={25}
-                    className='object-contain'
-                  />
-
-                  {link.title}
-
-                </Link>
-              </div>
-            ))}
+        <div className='fixed inset-0 z-20'>
+          {/* Overlay */}
+          <div 
+            className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm max-md:flex hidden' 
+            onClick={handleOpenNav}>
           </div>
 
-        </motion.div>
+          <motion.div
+            variants={containerVariants}
+            animate={containerControls}
+            initial='close'
+            className='w-2/3 h-full bg-white padding fixed left-0 md:hidden z-30 border-r border-gray-300'
+          >
+            <div className='mt-12 flex flex-col'>
+              {navlinks.map((link, index) => (
+                <div key={index} className='hover:bg-gray-200 p-3 rounded'>
+                  <Link
+                    href={link.url}
+                    onClick={handleOpenNav}
+                    className='text-black flex justify-start items-center gap-2 text-sm'
+                    aria-label='Link'
+                  >
+                    <Image
+                      src={link.icon}
+                      alt={link.title}
+                      height={25}
+                      width={25}
+                      className='object-contain'
+                    />
+                    {link.title}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       )}
+
     </>
   );
 };

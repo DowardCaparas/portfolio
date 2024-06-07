@@ -75,11 +75,11 @@ const TextComponent = () => {
               </div>
 
               <CustomButton 
-                title='Send'
-                containerStyles='bg-secondary_purple hover:bg-primary_purple
-                active:bg-primary_yellow w-1/5' 
-                textStyles='text-primary_gray text-sm'  
-              />
+              title='Send'
+              containerStyles='bg-secondary_purple hover:bg-primary_purple 
+              active:bg-secondary_purple rounded-md' 
+              textStyles='text-white text-sm'  
+            />
              
     </form>
   );

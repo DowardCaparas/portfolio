@@ -11,12 +11,12 @@ const Hero = () => {
 
           <p className='dark:text-blue-800'>Hello I&apos;m</p>
           <h3 className='text-xl text-light_purple'>Dounhuward B. Caparas</h3>
-          <h1 className='md:text-6xl text-4xl font-semibold'>Frontend Web Developer</h1>
+          <h1 className='lg:text-6xl text-4xl font-semibold'>Frontend Web Developer</h1>
           <p>I&apos;m dedicated to crafting innovative solutions through coding and design.
           Let&apos;s create something extraordinary together!
           </p>
 
-          <div className='mt-10'>
+          <div className='mt-5'>
             <CustomButton 
               title='Services'
               containerStyles='bg-primary_yellow hover:bg-secondary_yellow 
