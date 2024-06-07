@@ -37,7 +37,7 @@ const Contact = () => {
                   width={25}
                   className='object-contain bg-white rounded'
                 />
-                <p className='text-primary_purple'>Send me an email</p>
+                <p className='text-secondary_purple'>Send me an email</p>
               </Link>
           </div>
 

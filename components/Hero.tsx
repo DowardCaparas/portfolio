@@ -18,9 +18,10 @@ const Hero = () => {
 
           <div className='mt-10'>
             <CustomButton 
-              title='Hire Me'
-              containerStyles='bg-primary_yellow px-5 py-2 rounded-md hover:bg-secondary_yellow' 
-              textStyles='text-black'  
+              title='Services'
+              containerStyles='bg-primary_yellow hover:bg-secondary_yellow 
+              active:bg-primary_yellow' 
+              textStyles='text-primary_black text-sm'  
             />
           </div>
     

@@ -32,7 +32,7 @@ const Footer = () => {
                     alt='socal media icon'
                     height={20}
                     width={20}
-                    className='object-contain bg-white rounded-md w-full p-1 cursor-pointer hover:bg-slate-300'
+                    className='object-contain bg-primary_gray rounded-md w-full p-1 cursor-pointer hover:bg-slate-300'
                   />
                 </Link>
               </div>

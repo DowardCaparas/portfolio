@@ -6,11 +6,12 @@ const CustomButton = ({title, containerStyles, textStyles, handleClick}: CustomB
   return (
    <button
       type='button'
-      className={containerStyles}
+      className={`${containerStyles} | px-5 py-2 rounded-full `}
       onClick={handleClick}
       aria-label={title}
    >
-      <span className={textStyles}>
+      <span className={`${textStyles} && text-sm`}>
+        
           {title}        
       </span>
 

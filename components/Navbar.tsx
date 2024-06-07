@@ -33,6 +33,7 @@ const Navbar = () => {
     };
   }, [open]);
 
+
   /*Add background when scrolled */
   const [scrolled, setScrolled] = useState(false);
 
@@ -84,57 +85,66 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex max-md:flex-row-reverse justify-between items-center w-full fixed padding z-10
-        ${
-          scrolled
+        className={`flex justify-between items-center w-full fixed padding z-10
+        ${scrolled
             ? 'bg-slate-900 bg-opacity-50 backdrop-blur-lg border-b border-violet-500 transition ease-in-out duration-300'
             : ''
-        }
+          }
         `}
       >
-        <Link href='#home' className='font-bold' aria-label='Home' >
-          Dwr.<span className='text-primary_yellow'>Dev</span>
-        </Link>
 
-        <div className='flex justify-center items-center gap-8 max-md:hidden'>
-          {navlinks.map((link, index) => (
-            <div key={index}>
-              <Link
-                href={link.url}
-                className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
-                aria-label='Link'
-              >
-                <span className={`
-                    ${
-                      scrolled
-                        ? 'text-white transition ease-in-out duration-300'
-                        : ''
+        {/*Logo */}
+        <div className='flex max-md:flex-row-reverse justify-center items-center gap-6'>
+          <Link href='#home' className='font-bold' aria-label='Home' >
+            Dwr.<span className='text-primary_yellow'>Dev</span>
+          </Link>
+
+        {/*Hamburger icon */}
+          <div className='hidden max-md:flex'>
+            <button
+              className='flex flex-col gap-y-1 bg-primary_gray p-2 rounded
+             hover:bg-gray-300 active:bg-primary_gray'
+              onClick={handleOpenNav}>
+
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
+
+            </button>
+          </div>
+
+        {/*Links */}
+          <div className='flex justify-center items-center gap-8 max-md:hidden'>
+            {navlinks.map((link, index) => (
+              <div key={index}>
+                <Link
+                  href={link.url}
+                  className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
+                  aria-label='Link'
+                >
+                  <span className={`
+                      ${scrolled
+                      ? 'text-white transition ease-in-out duration-300'
+                      : ''
                     }  
-                `}>
-                      {link.title}
-                </span>
-                
-              </Link>
-            </div>
-          ))}
+                  `}>
+                    {link.title}
+                  </span>
 
-      {/*Nav View CV Button */}
-            <ViewCV />
-
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className='hidden max-md:flex'>
-          <button 
-            className='flex flex-col gap-y-1 bg-primary_gray p-2 rounded
-             hover:bg-gray-300 active:bg-primary_gray' 
-            onClick={handleOpenNav}>
+        <div className='flex justify-center items-center gap-6'>
+          
 
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-              
-          </button>
+          {/*Nav View CV Button */}
+          <ViewCV />
         </div>
+
+
       </nav>
 
       {/*Nav container panel */}
@@ -143,8 +153,7 @@ const Navbar = () => {
           variants={containerVariants}
           animate={containerControls}
           initial='close'
-          className='w-2/3 h-full bg-white padding fixed left-0 
-          md:hidden z-10 flex flex-col justify-between border-r border-gray-300'
+          className='w-2/3 h-full bg-white padding fixed left-0 md:hidden z-10 border-r border-gray-300'
         >
 
           <div className='mt-12 flex flex-col'>
@@ -170,12 +179,6 @@ const Navbar = () => {
               </div>
             ))}
           </div>
-
-           {/*Nav View CV Button */}
-           <div className='mb-5'>
-               <ViewCV />
-           </div>
-           
 
         </motion.div>
       )}
