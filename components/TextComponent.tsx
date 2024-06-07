@@ -22,9 +22,34 @@ const TextComponent = () => {
       }))
     }
 
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+  
+      const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              senderEmail: formData.get('senderEmail'),
+              message: formData.get('message'),
+          }),
+      });
+  
+      const result = await response.json();
+  
+      if (result.success) {
+          // Handle success (e.g., show a success message)
+      } else {
+          // Handle error (e.g., show an error message)
+      }
+  };
+  
+
   return (
     <form 
-        action={async formData => { await sendEmail(formData)}}
+        onSubmit={handleSubmit}
         className='flex flex-col gap-6 md:w-1/2 w-full max-md:mt-10 text-sm'>
               <div className='flex flex-col gap-2'>
                 <label htmlFor={id + '-email'}>Your Email</label>
