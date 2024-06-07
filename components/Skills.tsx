@@ -8,7 +8,7 @@ const Skills = () => {
 
       {skills.map((item, index) => (
         <div key={index} className='flex flex-col justify-center items-center mt-14'>
-          <div className='mb-5'>
+          <div className='mb-4'>
             <h3>{item.title}</h3>
           </div>
 
