@@ -6,7 +6,7 @@ import ContactFormEmail from "@/email/ContactFormEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async (formData: FormData) => {
+const sendEmail = async (formData: FormData) => {
 
     const senderEmail = formData.get('senderEmail');
     const message = formData.get('message');
@@ -43,3 +43,5 @@ export const sendEmail = async (formData: FormData) => {
     }
 
 };
+
+export default sendEmail
