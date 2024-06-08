@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import CustomButton from './CustomButton'
 import { HeroBg } from '@/public/images'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
     <div className='w-full container__padding flex max-md:flex-wrap 
-    gap-6 justify-between items-center'>
+    gap-y-10 justify-between items-start'>
      
-      <div className='flex flex-col justify-start items-start gap-4 md:w-1/2'>
+      <div className='flex flex-col justify-start items-start gap-4 md:w-1/2 mt-8'>
 
           <p className='dark:text-blue-800'>Hello I&apos;m</p>
           <h3 className='text-xl text-light_purple'>Dounhuward B. Caparas</h3>
@@ -16,14 +17,14 @@ const Hero = () => {
           Let&apos;s create something extraordinary together!
           </p>
 
-          <div className='mt-5'>
+          <Link href='#services' className='mt-5'>
             <CustomButton 
               title='Services'
               containerStyles='bg-primary_yellow hover:bg-secondary_yellow 
               active:bg-primary_yellow' 
               textStyles='text-primary_black text-sm'  
             />
-          </div>
+          </Link>
     
       </div>
 
@@ -34,7 +35,7 @@ const Hero = () => {
             height={502}
             width={610}
             quality={100}
-            className='object-contain'
+            className='object-contain max-md:w-3/4'
           />
       </div>
 

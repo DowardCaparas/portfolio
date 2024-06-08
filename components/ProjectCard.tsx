@@ -22,11 +22,12 @@ const ProjectCard = ({ projects }: ProjectList) => {
   };
 
   return (
-    <div className='w-full container__padding flex flex-col gap-3'>
+    <div className='w-full flex flex-col gap-3'>
       {projects.map((item, index) => (
         <div key={index} className='flex max-md:flex-col justify-start items-start 
         gap-4 p-5 rounded bg-primary_gray'>
 
+      {/*Image of Project */}
           <Image 
               src={item.image}
               alt={item.name}
@@ -35,7 +36,8 @@ const ProjectCard = ({ projects }: ProjectList) => {
               className='object-contain'
           />
           
-          <div className='flex flex-col justify-start items-start gap-4 mt-3 border-t py-1 border-gray-300'>
+      {/*Details */}
+          <div className='w-full flex flex-col justify-start items-start gap-4 mt-3 border-t py-1 border-gray-300'>
 
             <div className='flex justify-between items-center w-full'>
               <p>{item.category}</p>
@@ -51,6 +53,8 @@ const ProjectCard = ({ projects }: ProjectList) => {
 
             <div className='flex justify-between items-center w-full'>
 
+            
+           {/*Live Demo button */}
               <div className="bg-gray-300 hover:bg-primary_gray active:bg-gray-300 py-2 px-3 rounded">
                 <Link
                   href={item.url}
@@ -68,7 +72,8 @@ const ProjectCard = ({ projects }: ProjectList) => {
                 </Link>
               </div>
 
-
+            
+            {/*Chevron to toggle the description*/}
                 <Image
                   src={open[index ] ? chevronup : chevrondown}
                   alt="chevron"

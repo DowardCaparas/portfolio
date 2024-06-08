@@ -24,10 +24,11 @@ import chevrondown from './chevrondown.svg'
 import chevronup from './chevronup.svg'
 import envelope from './envelope.svg'
 import plane from './plane.svg'
+import monitor from './monitor.svg'
 
 export {
     arrowup, bootstrapIcon, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
     htmlIcon, info, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, phone,
     photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon, chevrondown, 
-    chevronup, envelope, plane,
+    chevronup, envelope, plane, monitor
 }

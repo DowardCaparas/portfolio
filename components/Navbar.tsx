@@ -83,9 +83,9 @@ const Navbar = () => {
 
 
   return (
-    <>
+    <header>
       <nav
-        className={`flex justify-between items-center w-full fixed padding z-10
+        className={`flex justify-between fixed items-center w-full  padding z-10
         ${scrolled
             ? 'bg-slate-900 bg-opacity-50 backdrop-blur-lg border-b border-violet-500 transition ease-in-out duration-300'
             : ''
@@ -187,7 +187,7 @@ const Navbar = () => {
         </div>
       )}
 
-    </>
+    </header>
   );
 };
 

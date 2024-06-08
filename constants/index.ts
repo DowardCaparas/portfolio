@@ -1,6 +1,6 @@
 import { info, service, caseIcon, fileIcon, phone, facebookIcon, twitterIcon, instagramIcon,
          linkedinIcon, javascripticon, typescripticon, nextjsIcon, tailwindIcon, reactIcon, 
-         framerIcon, htmlIcon, cssIcon, bootstrapIcon, photoshopIcon, canvaIcon,
+         framerIcon, htmlIcon, cssIcon, bootstrapIcon, photoshopIcon, canvaIcon, monitor,
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
@@ -69,4 +69,44 @@ export const projects = [
         description: 'TechElevate: Where innovation meets quality, and creativity meets productivity. We are on a mission to bridge the gap between imagination and realization by offering top-tier gadgets that empower individuals and businesses to elevate their tech game. From cutting-edge devices to innovative accessories, TechElevate is your ultimate destination for unlocking new possibilities in technology.',
         url: 'https://dowardcaparas.github.io/iDSGadgets/'
     },
+];
+
+export const myServices = [
+
+    { 
+        title: 'Responsive UI Design',
+        paragraph: 'Ensure websites and apps are fully responsive, visually appealing, and mobile-friendly.',
+        icon: monitor
+    },
+
+    { 
+        title: 'User Experience Optimization',
+        paragraph: 'Conduct user testing and optimize the application for a better user experience.',
+        icon: monitor
+    },
+
+    { 
+        title: 'Code Optimization',
+        paragraph: 'Refactor and optimize code to enhance performance and maintainability.',
+        icon: monitor
+    },
+
+    { 
+        title: 'Load Time Improvement',
+        paragraph: 'Implement best practices to reduce load times and improve application speed.',
+        icon: monitor
+    },
+
+    { 
+        title: 'Single Page Apps (SPAs)',
+        paragraph: 'Build fast and responsive SPAs that provide a seamless user experience.',
+        icon: monitor
+    },
+
+    { 
+        title: 'Custom Web App Development',
+        paragraph: `Build bespoke web applications tailored to the company's specific needs.`,
+        icon: monitor
+    },
+
 ];

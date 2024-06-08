@@ -10,6 +10,8 @@ import ProjectCard from './ProjectCard';
 import Contact from './Contact';
 import TextComponent from './TextComponent';
 import ViewCV from './ViewCV';
+import Services from './Services';
+import Title from './Title';
 
 export {
     Navbar,
@@ -24,4 +26,6 @@ export {
     Contact,
     TextComponent,
     ViewCV,
+    Services,
+    Title,
 }

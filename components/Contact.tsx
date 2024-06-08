@@ -2,17 +2,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TextComponent from './TextComponent';
 import { envelope } from '@/public';
+import Title from './Title';
 
 const Contact = () => {
   return (
     <div id='contact' className='w-full container__padding'>
-      <div className='flex flex-col justify-center items-center gap-2 mb-10'>
-        <h2 className='text-2xl font-medium'>Contact me</h2>
-        <div className='border-r h-5 border-primary_blue'></div>
-        <p>
+      <div className='flex flex-col  gap-2 mb-10'>
+
+        <Title label='Contact'/>
+        <h3 className='md:text-xl lg:w-1/2 font-bold'>
         We&apos;d love to hear from you! Whether you have a question, feedback, 
         or just want to say hello, feel free to reach me out.
-        </p>
+        </h3>
       </div>
 
       {/*container */}

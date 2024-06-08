@@ -26,6 +26,12 @@ body {
   }
 }
 
+.text-justify-center {
+  text-align: justify;
+  text-align-last: center;
+}
+
+
 .padding {
   @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 p-5
 }
