@@ -87,7 +87,7 @@ const Navbar = () => {
       <nav
         className={`flex justify-between fixed items-center w-full  padding z-10
         ${scrolled
-            ? 'bg-slate-900 bg-opacity-50 backdrop-blur-lg border-b border-violet-500 transition ease-in-out duration-300'
+            ? 'bg-primary_black bg-opacity-30 backdrop-blur-xl border-b-2 border-violet-500 transition ease-in-out duration-300'
             : ''
           }
         `}
@@ -95,7 +95,7 @@ const Navbar = () => {
 
         {/*Logo */}
         <div className='flex max-md:flex-row-reverse justify-center items-center gap-6'>
-          <Link href='#home' className='font-bold' aria-label='Home' >
+          <Link href='#home' className='font-bold text-xl mr-10' aria-label='Home' >
             Dwr.<span className='text-primary_yellow'>Dev</span>
           </Link>
 
@@ -119,7 +119,7 @@ const Navbar = () => {
               <div key={index}>
                 <Link
                   href={link.url}
-                  className='hover:text-slate-400 uppercase text-sm max-lg:text-[12px]'
+                  className='hover:text-gray-400 hover:underline uppercase text-sm max-lg:text-[12px]'
                   aria-label='Link'
                 >
                   <span className={`

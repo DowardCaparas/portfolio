@@ -27,16 +27,26 @@ const ProjectCard = ({ projects }: ProjectList) => {
         <div key={index} className='flex max-md:flex-col justify-start items-start 
         gap-4 p-5 rounded bg-primary_gray'>
 
-      {/*Image of Project */}
-          <Image 
-              src={item.image}
-              alt={item.name}
-              height={450}
-              width={450}
-              className='object-contain'
-          />
-          
-      {/*Details */}
+          {/*Image of Project */}
+          <Link
+            href={item.url}
+            className="flex justify-center items-center gap-2"
+            aria-label='Link'
+          >
+
+              <Image
+                src={item.image}
+                alt={item.name}
+                height={450}
+                width={500}
+                className='object-contain'
+                quality={100}
+              />
+
+          </Link>
+
+
+          {/*Details */}
           <div className='w-full flex flex-col justify-start items-start gap-4 mt-3 border-t py-1 border-gray-300'>
 
             <div className='flex justify-between items-center w-full'>
@@ -53,12 +63,13 @@ const ProjectCard = ({ projects }: ProjectList) => {
 
             <div className='flex justify-between items-center w-full'>
 
-            
-           {/*Live Demo button */}
-              <div className="bg-gray-300 hover:bg-primary_gray active:bg-gray-300 py-2 px-3 rounded">
+
+              {/*Live Demo button */}
+              <div className="bg-white hover:bg-gray-200 active:bg-gray-300 py-2 px-3 rounded">
                 <Link
                   href={item.url}
                   className="flex justify-center items-center gap-2"
+                  aria-label='Link'
                 >
                   <p className="text-primary_black text-[12px]">Live Demo</p>
                   <Image
@@ -72,18 +83,18 @@ const ProjectCard = ({ projects }: ProjectList) => {
                 </Link>
               </div>
 
-            
-            {/*Chevron to toggle the description*/}
-                <Image
-                  src={open[index ] ? chevronup : chevrondown}
-                  alt="chevron"
-                  height={25} 
-                  width={25}
-                  quality={100}
-                  onClick={() => toggleOpen(index)}
-                  className="object-contain bg-gray-300 hover:bg-primary_gray active:bg-gray-300 
+
+              {/*Chevron to toggle the description*/}
+              <Image
+                src={open[index] ? chevronup : chevrondown}
+                alt="chevron"
+                height={25}
+                width={25}
+                quality={100}
+                onClick={() => toggleOpen(index)}
+                className="object-contain bg-white hover:bg-gray-200 active:bg-gray-300 
                   rounded-full cursor-pointer"
-                />
+              />
             </div>
 
           </div>

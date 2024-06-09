@@ -60,6 +60,7 @@ const TextComponent = () => {
                   onChange={handleChange}
                   name='senderEmail'
                   value={formData.senderEmail}
+                  required
                 />
               </div>
               <div className='flex flex-col gap-2'>
@@ -71,6 +72,7 @@ const TextComponent = () => {
                   onChange={handleChange}
                   className='resize-none text-primary_black py-2 px-3 rounded text-sm 
                   h-32 border-2 border-gray-300'
+                  required
                 />
               </div>
 
@@ -78,7 +80,7 @@ const TextComponent = () => {
               title='Send'
               containerStyles='bg-secondary_purple hover:bg-primary_purple 
               active:bg-secondary_purple rounded-md' 
-              textStyles='text-white text-sm'  
+              textStyles='text-white text-md font-bold'  
             />
              
     </form>

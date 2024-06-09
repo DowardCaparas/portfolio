@@ -1,6 +1,6 @@
 import { info, service, caseIcon, fileIcon, phone, facebookIcon, twitterIcon, instagramIcon,
          linkedinIcon, javascripticon, typescripticon, nextjsIcon, tailwindIcon, reactIcon, 
-         framerIcon, htmlIcon, cssIcon, bootstrapIcon, photoshopIcon, canvaIcon,
+         framerIcon, htmlIcon, cssIcon, photoshopIcon, canvaIcon,
          userInterface, monitor, fast, mobile, code, filecode,
  } from "@/public";
 
@@ -39,7 +39,6 @@ export const skills = [
             {name: 'Framer', icon: framerIcon },
             {name: 'HTML', icon: htmlIcon },
             {name: 'CSS', icon: cssIcon },
-            {name: 'Bootstrap', icon: bootstrapIcon }
         ],
     },
 
@@ -67,7 +66,7 @@ export const projects = [
         image: IDSGadgetsImage.src, 
         category:'#Devices',
         date: '2024',
-        description: 'TechElevate: Where innovation meets quality, and creativity meets productivity. We are on a mission to bridge the gap between imagination and realization by offering top-tier gadgets that empower individuals and businesses to elevate their tech game. From cutting-edge devices to innovative accessories, TechElevate is your ultimate destination for unlocking new possibilities in technology.',
+        description: 'iDSGadgets: Where innovation meets quality, and creativity meets productivity. We are on a mission to bridge the gap between imagination and realization by offering top-tier gadgets that empower individuals and businesses to elevate their tech game. From cutting-edge devices to innovative accessories, iDSGadgets is your ultimate destination for unlocking new possibilities in technology.',
         url: 'https://dowardcaparas.github.io/iDSGadgets/'
     },
 ];

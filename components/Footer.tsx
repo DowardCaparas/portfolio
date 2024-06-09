@@ -7,7 +7,11 @@ const Footer = () => {
     <footer className='container__padding mb-10'>
       <div className='flex max-md:flex-col justify-between items-start gap-y-10'>
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
-          <h2 className='font-bold text-xl'>Dwr.<span className='text-primary_yellow'>Dev</span></h2>
+          
+        <Link href='#home' className='font-bold text-xl ' aria-label='Home' >
+            Dwr.<span className='text-primary_yellow'>Dev</span>
+          </Link>
+
           <p>
           Empowering creativity and innovation, one line of code at a time. Let&apos;s build the future together.
           </p>

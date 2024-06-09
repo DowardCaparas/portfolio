@@ -17,7 +17,7 @@ const About = () => {
 
                 <div>
                   <h3>Senior High School</h3>
-                    <p>Informtaion anc Communications Technology Major in Programming</p>
+                    <p>Information and Communications Technology Major in Programming</p>
                     <p>Granby Colleges of Science and Technology Inc. (Ibayo Silangan, Naic, Cavite)</p>
                     <p>(2017 - 2019)</p>
                 </div>

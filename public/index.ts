@@ -1,5 +1,4 @@
 import arrowup from './arrowup.svg'
-import bootstrapIcon from './bootstrapIcon.svg'
 import canvaIcon from './canvaIcon.svg'
 import caseIcon from './caseIcon.svg'
 import cssIcon from './cssIcon.svg'
@@ -31,7 +30,7 @@ import code from './code.svg'
 import filecode from './filecode.svg'
 import fast from './fast.svg'
 export {
-    arrowup, bootstrapIcon, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
+    arrowup, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
     htmlIcon, info, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, phone,
     photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon, chevrondown, 
     chevronup, envelope, plane, monitor, userInterface, mobile, code, filecode, fast,
