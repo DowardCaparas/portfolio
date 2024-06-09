@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className='w-full container__padding flex max-md:flex-wrap 
-    gap-y-10 justify-between items-start'>
+    <div className='w-full container__padding flex max-lg:flex-wrap 
+    gap-10 justify-between items-start'>
      
-      <div className='flex flex-col justify-start items-start gap-4 md:w-1/2 mt-8'>
+      <div className='flex flex-col justify-start items-start gap-4 md:w-2/3 mt-8'>
 
           <p className='dark:text-blue-800'>Hello I&apos;m</p>
           <h3 className='text-xl text-light_purple'>Dounhuward B. Caparas</h3>
@@ -28,14 +28,14 @@ const Hero = () => {
     
       </div>
 
-      <div className='w-full md:w-1/2 flex justify-end items-end'>
+      <div className='w-full  flex justify-end items-end'>
           <Image 
             src={HeroBg}
             alt='Doward Caparas'
             height={502}
             width={610}
             quality={100}
-            className='object-contain max-md:w-3/4'
+            className='object-contain sm:max-lg:w-3/4'
           />
       </div>
 

@@ -10,7 +10,7 @@ const Contact = () => {
       <div className='flex flex-col  gap-2 mb-10'>
 
         <Title label='Contact'/>
-        <h3 className='md:text-xl lg:w-1/2 font-bold'>
+        <h3 className='text-justify-center place-self-center md:text-xl font-semibold md:w-1/2'>
         We&apos;d love to hear from you! Whether you have a question, feedback, 
         or just want to say hello, feel free to reach me out.
         </h3>

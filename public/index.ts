@@ -25,10 +25,14 @@ import chevronup from './chevronup.svg'
 import envelope from './envelope.svg'
 import plane from './plane.svg'
 import monitor from './monitor.svg'
-
+import userInterface from './userinterfacce.svg'
+import mobile from './mobile.svg'
+import code from './code.svg'
+import filecode from './filecode.svg'
+import fast from './fast.svg'
 export {
     arrowup, bootstrapIcon, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
     htmlIcon, info, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, phone,
     photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon, chevrondown, 
-    chevronup, envelope, plane, monitor
+    chevronup, envelope, plane, monitor, userInterface, mobile, code, filecode, fast,
 }

@@ -1,6 +1,7 @@
 import { info, service, caseIcon, fileIcon, phone, facebookIcon, twitterIcon, instagramIcon,
          linkedinIcon, javascripticon, typescripticon, nextjsIcon, tailwindIcon, reactIcon, 
-         framerIcon, htmlIcon, cssIcon, bootstrapIcon, photoshopIcon, canvaIcon, monitor,
+         framerIcon, htmlIcon, cssIcon, bootstrapIcon, photoshopIcon, canvaIcon,
+         userInterface, monitor, fast, mobile, code, filecode,
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
@@ -76,25 +77,25 @@ export const myServices = [
     { 
         title: 'Responsive UI Design',
         paragraph: 'Ensure websites and apps are fully responsive, visually appealing, and mobile-friendly.',
-        icon: monitor
+        icon: mobile
     },
 
     { 
         title: 'User Experience Optimization',
         paragraph: 'Conduct user testing and optimize the application for a better user experience.',
-        icon: monitor
+        icon: userInterface
     },
 
     { 
         title: 'Code Optimization',
         paragraph: 'Refactor and optimize code to enhance performance and maintainability.',
-        icon: monitor
+        icon: code
     },
 
     { 
         title: 'Load Time Improvement',
         paragraph: 'Implement best practices to reduce load times and improve application speed.',
-        icon: monitor
+        icon: fast
     },
 
     { 
@@ -106,7 +107,7 @@ export const myServices = [
     { 
         title: 'Custom Web App Development',
         paragraph: `Build bespoke web applications tailored to the company's specific needs.`,
-        icon: monitor
+        icon: filecode
     },
 
 ];
