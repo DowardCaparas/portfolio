@@ -12,7 +12,8 @@ const ViewCV = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='border-2 border-secondary_purple rounded-full flex gap-4 p-1'>
+    <div className='border-2 border-secondary_purple hover:border-primary_purple active:bg-secondary_purple
+    rounded-full flex gap-4 p-1 transition-all duration-200 ease-linear'>
 
       {open && (
         <Link
@@ -41,7 +42,7 @@ const ViewCV = () => {
         height={40}
         width={40}
         onClick={() => setOpen(prev => !prev)}
-        className='object-contain rounded-full cursor-pointer hover:border border-white'
+        className='object-contain rounded-full cursor-pointer'
       />
 
     </div>

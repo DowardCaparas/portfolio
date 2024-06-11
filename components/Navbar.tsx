@@ -160,15 +160,15 @@ const Navbar = () => {
             variants={containerVariants}
             animate={containerControls}
             initial='close'
-            className='w-2/3 h-full bg-white padding fixed left-0 md:hidden z-30 border-r border-gray-300'
+            className='w-2/3 h-full bg-primary_gray padding fixed left-0 md:hidden z-30'
           >
             <div className='mt-12 flex flex-col'>
               {navlinks.map((link, index) => (
-                <div key={index} className='hover:bg-gray-200 p-3 rounded'>
+                <div key={index} className='hover:bg-gray-200 active:bg-primary_gray p-3 rounded'>
                   <Link
                     href={link.url}
                     onClick={handleOpenNav}
-                    className='text-black flex justify-start items-center gap-2 text-sm'
+                    className='text-primary_black flex justify-start items-center gap-2 text-sm'
                     aria-label='Link'
                   >
                     <Image
