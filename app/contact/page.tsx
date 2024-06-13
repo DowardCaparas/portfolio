@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import TextComponent from './TextComponent';
+import { TextComponent, Title } from '@/components';
 import { envelope } from '@/public';
-import Title from './Title';
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full container__padding'>
+    <section id='contact' className='w-full container__padding'>
       <div className='flex flex-col  gap-2 mb-10'>
 
         <Title label='Contact'/>
@@ -52,7 +51,7 @@ const Contact = () => {
         <TextComponent />
 
       </div>
-    </div>
+    </section>
   );
 };
 

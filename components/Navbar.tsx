@@ -1,38 +1,15 @@
-'use client';
+"use client";
 
 import { navlinks } from '@/constants';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { motion, useAnimationControls } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import ViewCV from './ViewCV';
+import MobileLinks from './MobileLinks';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
-  /*Open navigation panel */
-  const [open, setOpen] = useState(false);
-
-  const handleOpenNav = () => {
-    setOpen((prev) => !prev);
-  };
-
-  /*End of opening navigation panel */
-
-  /*Tap anywhere to close the nav container */
-  useEffect(() => {
-    const handleOutsideClickOrTouch = () => {
-      if (open) {
-        // If navigation is open and the interaction is outside of navigation, close it
-        setOpen((prev) => !prev);
-      }
-    };
-
-    document.body.addEventListener('click', handleOutsideClickOrTouch);
-
-    return () => {
-      document.body.removeEventListener('click', handleOutsideClickOrTouch);
-    };
-  }, [open]);
-
+  const pathname = usePathname();
 
   /*Add background when scrolled */
   const [scrolled, setScrolled] = useState(false);
@@ -51,85 +28,49 @@ const Navbar = () => {
 
   /*End of adding background when scrolled */
 
-  /*Animate navigation panel */
-  const containerVariants = {
-    close: {
-      width: '5rem',
-      transition: {
-        type: 'tween',
-        duration: 0.3,
-      },
-    },
-    open: {
-      width: '16rem',
-      transition: {
-        type: 'tween',
-        duration: 0.3,
-      },
-    },
-  };
-
-  const containerControls = useAnimationControls();
-
-  useEffect(() => {
-    if (open) {
-      containerControls.start('open');
-    } else {
-      containerControls.start('close');
-    }
-  }, [open, containerControls]);
-
-  /*End of Animating navigation panel */
-
-
   return (
-    <header>
-      <nav
-        className={`flex justify-between fixed items-center w-full  padding z-10
-        ${scrolled
-            ? 'bg-primary_black bg-opacity-30 backdrop-blur-xl border-b-2 border-violet-500 transition ease-in-out duration-300'
-            : ''
-          }
-        `}
-      >
+    <nav className={`w-full top-0 nav__padding z-10 fixed 
+    ${scrolled
+      ? 'nav__background'
+      : ''
+    }
 
+    `}>
+
+      <div className='w-full flex justify-between items-center'>
         {/*Logo */}
         <div className='flex max-md:flex-row-reverse justify-center items-center gap-6'>
-          <Link href='#home' className='font-bold text-xl mr-10' aria-label='Home' >
-            Dwr.<span className='text-primary_yellow'>Dev</span>
+          <Link 
+            href='/' 
+            className='font-bold text-xl mr-10' 
+            aria-label='Home'>
+            Dwr.<span className=' text-violet-700'>Dev</span>
           </Link>
 
-          {/*Hamburger icon */}
-          <div className='hidden max-md:flex'>
-            <button
-              className='flex flex-col gap-y-1 bg-primary_gray p-2 rounded
-             hover:bg-gray-300 active:bg-primary_gray'
-              onClick={handleOpenNav}>
-
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-              <div className='w-6 h-1 rounded-md bg-primary_black'></div>
-
-            </button>
-          </div>
-
           {/*Links */}
-          <div className='flex justify-center items-center gap-8 max-md:hidden'>
+          <div className='flex justify-center items-center gap-2 max-md:hidden'>
             {navlinks.map((link, index) => (
-              <div key={index}>
+              <div
+                key={index}
+                className={`${
+                  pathname === link.url
+                    ? ''
+                    : 'hover:bg-gray-300 hover:dark:bg-gray-900 w-full rounded transition duration-150 ease-in-out'
+                }`}
+              >
                 <Link
-                  href={link.url}
-                  className='hover:text-gray-400 hover:underline uppercase text-sm max-lg:text-[12px]'
+                  href={link.url}  
                   aria-label='Link'
                 >
-                  <span className={`
-                      ${scrolled
-                      ? 'text-white transition ease-in-out duration-300'
-                      : ''
-                    }  
-                  `}>
-                    {link.title}
-                  </span>
+
+                    <div className={`py-1 px-4 dark:text-white
+                          ${pathname === link.url
+                              ? 'border-b-2 border-gray-300'
+                              : ''
+                          }`}
+                    >
+                      {link.title}
+                    </div>
 
                 </Link>
               </div>
@@ -138,56 +79,17 @@ const Navbar = () => {
         </div>
 
         <div className='flex justify-center items-center gap-6'>
-
-
           {/*Nav View CV Button */}
           <ViewCV />
+          <ThemeToggle />
         </div>
+      </div>
 
+      <div className='hidden max-md:flex'>
+          <MobileLinks />
+      </div>
 
-      </nav>
-
-      {/* Nav container panel */}
-      {open && (
-        <div className='fixed inset-0 z-20'>
-          {/* Overlay */}
-          <div 
-            className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm max-md:flex hidden' 
-            onClick={handleOpenNav}>
-          </div>
-
-          <motion.div
-            variants={containerVariants}
-            animate={containerControls}
-            initial='close'
-            className='w-2/3 h-full bg-primary_gray padding fixed left-0 md:hidden z-30'
-          >
-            <div className='mt-12 flex flex-col'>
-              {navlinks.map((link, index) => (
-                <div key={index} className='hover:bg-gray-200 active:bg-primary_gray p-3 rounded'>
-                  <Link
-                    href={link.url}
-                    onClick={handleOpenNav}
-                    className='text-primary_black flex justify-start items-center gap-2 text-sm'
-                    aria-label='Link'
-                  >
-                    <Image
-                      src={link.icon}
-                      alt={link.title}
-                      height={25}
-                      width={25}
-                      className='object-contain'
-                    />
-                    {link.title}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      )}
-
-    </header>
+    </nav>
   );
 };
 

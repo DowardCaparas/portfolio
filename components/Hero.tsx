@@ -17,12 +17,12 @@ const Hero = () => {
           Let&apos;s create something extraordinary together!
           </p>
 
-          <Link href='#services' className='mt-5'>
+          <Link href='/myservices' className='mt-5'>
             <CustomButton 
               title='Services'
-              containerStyles='bg-primary_yellow hover:bg-secondary_yellow 
+              containerStyles='bg-secondary_purple hover:bg-primary_purple
               active:bg-primary_yellow' 
-              textStyles='text-primary_black text-md font-bold'  
+              textStyles='text-white text-md font-bold'  
             />
           </Link>
     

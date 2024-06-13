@@ -1,21 +1,17 @@
 import arrowup from './arrowup.svg'
 import canvaIcon from './canvaIcon.svg'
-import caseIcon from './caseIcon.svg'
 import cssIcon from './cssIcon.svg'
 import facebookIcon from './facebookIcon.svg'
 import fileIcon from './fileIcon.svg'
 import framerIcon from './framerIcon.svg'
 import htmlIcon from './htmlIcon.svg'
-import info from './info.svg'
 import instagramIcon from './instagramIcon.svg'
 import javascripticon from './javascripticon.svg'
 import linkedinIcon from './linkedinIcon.svg'
 import message from './message.svg'
 import nextjsIcon from './nextjsIcon.svg'
-import phone from './phone.svg'
 import photoshopIcon from './photoshopIcon.svg'
 import reactIcon from './reactIcon.svg'
-import service from './service.svg'
 import tailwindIcon from './tailwindIcon.svg'
 import typescripticon from './typescripticon.svg'
 import twitterIcon from './twitterIcon.svg'
@@ -29,9 +25,12 @@ import mobile from './mobile.svg'
 import code from './code.svg'
 import filecode from './filecode.svg'
 import fast from './fast.svg'
+import sun from './sun.svg'
+import moon from './moon.svg'
+
 export {
-    arrowup, canvaIcon, caseIcon, cssIcon, facebookIcon, fileIcon, framerIcon,
-    htmlIcon, info, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, phone,
-    photoshopIcon, reactIcon, service, tailwindIcon, typescripticon, twitterIcon, chevrondown, 
-    chevronup, envelope, plane, monitor, userInterface, mobile, code, filecode, fast,
+    arrowup, canvaIcon, cssIcon, facebookIcon, fileIcon, framerIcon, sun, moon,
+    htmlIcon, instagramIcon, javascripticon, linkedinIcon, message, nextjsIcon, 
+    photoshopIcon, reactIcon, tailwindIcon, typescripticon, twitterIcon, chevrondown, 
+    chevronup, envelope, plane, monitor, userInterface, mobile, code, filecode, fast, 
 }

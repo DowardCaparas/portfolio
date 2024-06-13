@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import Title from './Title'
+import { Title } from '@/components'
 import { myServices } from '@/constants'
 
 const Services = () => {
   return (
-    <div id='services' className='w-full container__padding'>
+    <section id='services' className='w-full container__padding'>
 
          <Title label='Services'/>
          <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid-flow-row gap-4 md:gap-8'>
@@ -31,7 +31,7 @@ const Services = () => {
             ))}
 
          </div>
-    </div>
+    </section>
   )
 }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer, Navbar } from "@/components";
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <body className='{inter.className}'>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class">
           <Navbar />
           {children}
           <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -8,21 +8,13 @@ const Footer = () => {
       <div className='flex max-md:flex-col justify-between items-start gap-y-10'>
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
           
-        <Link href='#home' className='font-bold text-xl ' aria-label='Home' >
-            Dwr.<span className='text-primary_yellow'>Dev</span>
+        <Link href='/' className='font-bold text-xl ' aria-label='Home' >
+            Dwr.<span className='text-violet-700'>Dev</span>
           </Link>
 
           <p>
           Empowering creativity and innovation, one line of code at a time. Let&apos;s build the future together.
           </p>
-        </div>
-
-        <div className='flex flex-col justify-start items-start gap-2'>
-          {navlinks.map((link, index) => (
-            <div key={index}>
-              <Link href={link.url} aria-label='Link'>{link.title} </Link>
-            </div>
-          ))}
         </div>
 
         <div className='flex flex-col justify-start items-start gap-2'>

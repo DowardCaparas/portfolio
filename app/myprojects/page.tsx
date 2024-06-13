@@ -1,17 +1,16 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+
+import { ProjectCard, Title } from '@/components'
 import { projects } from '@/constants'
-import Title from './Title'
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full container__padding'>
+    <section id='projects' className='w-full container__padding'>
 
       <Title label='Projects'/>
 
       <ProjectCard projects={projects}/>
 
-    </div>
+    </section>
   )
 }
 

@@ -1,16 +1,17 @@
-import { info, service, caseIcon, fileIcon, phone, facebookIcon, twitterIcon, instagramIcon,
+import { facebookIcon, twitterIcon, instagramIcon,
          linkedinIcon, javascripticon, typescripticon, nextjsIcon, tailwindIcon, reactIcon, 
-         framerIcon, htmlIcon, cssIcon, photoshopIcon, canvaIcon,
+         framerIcon, htmlIcon, cssIcon, photoshopIcon, canvaIcon, 
          userInterface, monitor, fast, mobile, code, filecode,
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
 
 export const navlinks = [
-    {title: 'About', url: '#about', icon: info },
-    {title: 'Services', url: '#services', icon: service },
-    {title: 'Projects', url: '#projects', icon: caseIcon },
-    {title: 'Contact', url: '#contact', icon: phone },
+    {title: 'Home', url: '/' },
+    {title: 'About', url: '/about' },
+    {title: 'Services', url: '/myservices' },
+    {title: 'Projects', url: '/myprojects' },
+    {title: 'Contact', url: '/contact' },
 ];
 
 export const socials = [

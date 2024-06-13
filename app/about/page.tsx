@@ -1,12 +1,10 @@
-import Image from 'next/image'
-import PeronalInfoCard from './PeronalInfoCard'
-import { personalInfo, skills } from '@/constants'
-import Skills from './Skills'
-import Title from './Title'
+
+import { personalInfo } from '@/constants'
+import { PeronalInfoCard, Title, Skills } from '@/components';
 
 const About = () => {
   return (
-    <div id='about' className='w-full container__padding'>
+    <section id='about' className='w-full container__padding'>
 
         <Title label='About Me'/>
 
@@ -37,7 +35,7 @@ const About = () => {
               <Skills /> 
            </div>
            
-    </div>
+    </section>
   )
 }
 

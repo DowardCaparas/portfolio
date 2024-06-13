@@ -39,8 +39,8 @@ const ViewCV = () => {
       <Image
         src={profile}
         alt='profile'
-        height={40}
-        width={40}
+        height={35}
+        width={35}
         onClick={() => setOpen(prev => !prev)}
         className='object-contain rounded-full cursor-pointer'
       />
