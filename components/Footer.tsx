@@ -1,10 +1,10 @@
-import { navlinks, socials } from '@/constants';
+import { socials } from '@/constants';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className='container__padding mb-10'>
+    <footer className='container__padding mb-10 text-theme-dark'>
       <div className='flex max-md:flex-col justify-between items-start gap-y-10'>
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
           

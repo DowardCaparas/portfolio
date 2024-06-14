@@ -1,7 +1,5 @@
-import { facebookIcon, twitterIcon, instagramIcon,
-         linkedinIcon, javascripticon, typescripticon, nextjsIcon, tailwindIcon, reactIcon, 
-         framerIcon, htmlIcon, cssIcon, photoshopIcon, canvaIcon, 
-         userInterface, monitor, fast, mobile, code, filecode,
+import { facebookIcon, twitterIcon, instagramIcon, linkedinIcon,  userInterface, 
+         monitor, fast, mobile, code, filecode,
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
@@ -32,22 +30,22 @@ export const skills = [
     {
         title: 'Frontend',
         lists: [
-            {name: 'JavaScript', icon: javascripticon },
-            {name: 'TypeScript', icon: typescripticon },
-            {name: 'NEXT.js', icon: nextjsIcon },
-            {name: 'Tailwind', icon: tailwindIcon },
-            {name: 'React', icon: reactIcon },
-            {name: 'Framer', icon: framerIcon },
-            {name: 'HTML', icon: htmlIcon },
-            {name: 'CSS', icon: cssIcon },
+            {name: 'JavaScript' },
+            {name: 'TypeScript' },
+            {name: 'NEXT.js' },
+            {name: 'Tailwind' },
+            {name: 'React' },
+            {name: 'Framer' },
+            {name: 'HTML' },
+            {name: 'CSS' },
         ],
     },
 
     {
         title: 'Other',
         lists: [
-            {name: 'Photoshop', icon: photoshopIcon },
-            {name: 'Canva', icon: canvaIcon },
+            {name: 'Photoshop' },
+            {name: 'Canva' },
         ],
     },
 

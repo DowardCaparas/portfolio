@@ -1,28 +1,53 @@
-"use client"
+'use client';
 
-import { useTheme } from 'next-themes'
-import { sun, moon } from '@/public'
-import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
+import { animate, motion } from 'framer-motion'
 
 const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme()
-  const dark = 'dark'
+
+  //adding darkmode
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.theme === 'dark' || 
+        (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ? 'dark' : 'light';
+    }
+    return 'light';
+  });
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const handleClick = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.theme = newTheme;
+  };
+
+  //end of adding darkmode 
+
 
   return (
-    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      <div className={`flex border rounded-full p-2 bg-gray-400 transition duration-300 ease-in-out 
-      ${theme === dark ? '' : 'flex-row-reverse'} 
-      justify-center items-center gap-2`}>
-          <Image
-              src={theme === dark ? sun : moon}
-              alt='icon for dark and light mode'
-              height={20}
-              width={20}
-          />
-          <div className='rounded-full p-2 bg-primary_gray'></div>
+    <button onClick={handleClick}>
+      <div
+        className='flex border-2 rounded-full w-16  bg-zinc-300 p-1
+         dark:bg-secondary_purple transition duration-300 ease-in-out justify-start items-start'
+      >
+        <motion.div 
+       
+        animate={theme === 'dark' ? {x:30} : {x:0}}
+        className='bg-white rounded-full p-3 '>
+
+        </motion.div>
+        
       </div>
     </button>
-  )
-}
+  );
+};
 
-export default ThemeToggle
+export default ThemeToggle;

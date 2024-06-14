@@ -8,7 +8,9 @@ const Hero = () => {
     <div className='w-full container__padding flex max-lg:flex-wrap 
     gap-10 justify-between items-start'>
      
-      <div className='flex flex-col justify-start items-start gap-4 md:w-2/3 mt-8'>
+      <div className='flex flex-col justify-start items-start gap-4 md:w-2/3 mt-8
+        text-theme-dark
+      '>
 
           <p className='text-lg font-semibold'>Hello I&apos;m</p>
           <h3 className='text-xl text-light_purple'>Dounhuward B. Caparas</h3>
@@ -28,7 +30,7 @@ const Hero = () => {
     
       </div>
 
-      <div className='w-full  flex justify-end items-end max-sm:mt-8'>
+      <div className='w-auto h-auto  flex justify-end items-end max-sm:mt-8'>
           <Image 
             src={HeroBg}
             alt='Doward Caparas'

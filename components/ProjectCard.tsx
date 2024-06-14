@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { arrowup } from '@/public';
 import { chevrondown, chevronup } from '@/public';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 interface ProjectList {
   projects: ProjectCardProps[];

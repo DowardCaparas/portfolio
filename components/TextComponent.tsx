@@ -2,9 +2,6 @@
 
 import React, { useState, ChangeEvent, useId } from 'react';
 import CustomButton from './CustomButton';
-import sendEmail from '@/actions/sendEmail';
-import Image from 'next/image'
-import { plane } from '@/public';
 
 const TextComponent = () => {
   

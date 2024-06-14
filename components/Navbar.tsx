@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
 import { navlinks } from '@/constants';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import ViewCV from './ViewCV';
 import MobileLinks from './MobileLinks';
@@ -29,7 +29,7 @@ const Navbar = () => {
   /*End of adding background when scrolled */
 
   return (
-    <nav className={`w-full top-0 nav__padding z-10 fixed 
+    <nav className={`w-full top-0 nav__padding z-10 fixed border-b border-gray-500 md:py-5
     ${scrolled
       ? 'nav__background'
       : ''
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className='flex max-md:flex-row-reverse justify-center items-center gap-6'>
           <Link 
             href='/' 
-            className='font-bold text-xl mr-10' 
+            className='font-bold text-xl mr-10 text-theme-dark' 
             aria-label='Home'>
             Dwr.<span className=' text-violet-700'>Dev</span>
           </Link>
@@ -78,10 +78,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='flex justify-center items-center gap-6'>
+        <div className='flex justify-center items-center gap-4'>
           {/*Nav View CV Button */}
           <ViewCV />
           <ThemeToggle />
+         
         </div>
       </div>
 
