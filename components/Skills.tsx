@@ -3,7 +3,7 @@ import { skills } from '@/constants';
 const Skills = () => {
   return (
     <>
-      <h2 className='text-xl w-full border-b border-gray-500 font-bold'>Skills</h2>
+      <h2 className='text-xl w-full border_bottom font-semibold'>Skills</h2>
 
       {skills.map((item, index) => (
         <div key={index} className='flex flex-col justify-start items-start mt-14'>

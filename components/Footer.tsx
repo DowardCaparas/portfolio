@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='w-full border-t border-gray-500 mt-20 grid'>
+      <div className='w-full border_top mt-20 grid'>
          <p className='place-self-center mt-10'>Copyright &copy; 2024 Dounhuward Caparas All Rights Reserved.</p>
       </div>
       

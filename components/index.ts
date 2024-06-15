@@ -10,6 +10,7 @@ import ViewCV from './ViewCV';
 import Title from './Title';
 import MobileLinks from './MobileLinks';
 import ThemeToggle from './ThemeToggle';
+import Loading from './Loading';
 
 export {
     Navbar,
@@ -24,5 +25,6 @@ export {
     Title,
     MobileLinks,
     ThemeToggle,
+    Loading,
 
 }

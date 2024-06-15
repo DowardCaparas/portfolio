@@ -1,6 +1,5 @@
 import { PeronalInfoCardProps } from '@/types';
 import React from 'react';
-import Image from 'next/image';
 
 interface InfoCard {
   info: PeronalInfoCardProps[];
@@ -12,7 +11,7 @@ const PeronalInfoCard = ({ info }: InfoCard) => {
         {info.map((item, index) => (
           <div
             key={index}
-            className='bg-primary_gray rounded w-full text-primary_black p-3'
+            className='dark:bg-transparent bg-primary_gray rounded w-full p-3'
           >
             <h3>{item.title}</h3>
             <p className='text-[14px] md:text-sm'>{item.label}</p>

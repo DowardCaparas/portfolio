@@ -10,12 +10,12 @@ const About = () => {
 
         <div className="flex max-md:flex-col justify-between items-start gap-6">
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl w-full border-b border-gray-500 font-bold">
+            <h2 className="text-xl w-full border_bottom font-semibold">
               Education
             </h2>
 
             <div>
-              <h3 className="font-semibold">Senior High School</h3>
+              <h3 className="font-medium">Senior High School</h3>
               <p>
                 Information and Communications Technology Major in Programming
               </p>
@@ -27,7 +27,7 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="font-semibold">College</h3>
+              <h3 className="font-medium">College</h3>
               <p>Bachelor of Science in Information Technology</p>
               <p>Cavite State University (Bucana, Naic, Cavite)</p>
               <p>(2019 - 2024)</p>

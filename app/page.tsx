@@ -1,9 +1,12 @@
-import { Hero } from "@/components";
+import React, { Suspense } from "react";
+import { Hero, Loading } from "@/components";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Hero />
+      <Suspense fallback={<Loading />}>
+        <Hero />
+      </Suspense>
     </main>
   );
 }

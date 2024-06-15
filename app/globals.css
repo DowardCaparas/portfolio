@@ -30,6 +30,14 @@
   @apply dark:text-white transition ease-in-out duration-300;
 }
 
+.border_bottom {
+  @apply border-secondary_gray dark:border-darked_gray border-b
+}
+
+.border_top {
+  @apply border-secondary_gray dark:border-darked_gray border-t
+}
+
 body {
   @apply dark:bg-primary_black bg-white transition ease-in-out duration-300
 }
@@ -39,5 +47,5 @@ section {
 }
 
 p {
-  @apply text-sm dark:text-gray-300
+  @apply text-sm dark:text-light_gray text-paragraph
 }
