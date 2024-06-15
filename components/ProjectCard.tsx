@@ -25,7 +25,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
     <div className='w-full flex flex-col gap-3'>
       {projects.map((item, index) => (
         <div key={index} className='flex max-md:flex-col justify-start items-start 
-        gap-4 p-5 rounded bg-primary_gray'>
+        gap-4 p-5 rounded dark:bg-transparent bg-primary_gray'>
 
           {/*Image of Project */}
           <Link
@@ -55,7 +55,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
             </div>
 
             <h3 className='text-primary_black text-xl font-medium'>{item.name}</h3>
-            <p className="text-slate-800 max-lg:text-[12px]">
+            <p className=" max-lg:text-[12px]">
               {open[index]
                 ? item.description
                 : `${item.description.substring(0, 90)}...`}

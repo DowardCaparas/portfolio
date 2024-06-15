@@ -1,17 +1,17 @@
-
-import { ProjectCard, Title } from '@/components'
-import { projects } from '@/constants'
+import { ProjectCard, Title } from "@/components";
+import { projects } from "@/constants";
+import PageWrapper from "../PageWrapper";
 
 const Projects = () => {
   return (
-    <section id='projects' className='w-full container__padding'>
+    <PageWrapper>
+      <section className="w-full container__padding">
+        <Title label="Projects" />
 
-      <Title label='Projects'/>
+        <ProjectCard projects={projects} />
+      </section>
+    </PageWrapper>
+  );
+};
 
-      <ProjectCard projects={projects}/>
-
-    </section>
-  )
-}
-
-export default Projects
+export default Projects;

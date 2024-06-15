@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
           
         <Link href='/' className='font-bold text-xl ' aria-label='Home' >
-            Dwr.<span className='text-violet-700'>Dev</span>
+            Dwr.<span className='text-secondary_purple'>Dev</span>
           </Link>
 
           <p>
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <div className='w-full border-t border-gray-500 mt-20 grid'>
-         <p className='place-self-center mt-10'>&copy; 2024 Dounhuward Caparas All Rights Reserved.</p>
+         <p className='place-self-center mt-10'>Copyright &copy; 2024 Dounhuward Caparas All Rights Reserved.</p>
       </div>
       
     </footer>

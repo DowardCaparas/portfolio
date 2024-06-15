@@ -44,7 +44,7 @@ const Navbar = () => {
             href='/' 
             className='font-bold text-xl mr-10 text-theme-dark' 
             aria-label='Home'>
-            Dwr.<span className=' text-violet-700'>Dev</span>
+            Dwr.<span className=' text-secondary_purple'>Dev</span>
           </Link>
 
           {/*Links */}
@@ -55,7 +55,7 @@ const Navbar = () => {
                 className={`${
                   pathname === link.url
                     ? ''
-                    : 'hover:bg-gray-300 hover:dark:bg-gray-900 w-full rounded transition duration-150 ease-in-out'
+                    : 'hover:bg-gray-300 hover:dark:bg-secondary_black w-full rounded transition duration-150 ease-in-out'
                 }`}
               >
                 <Link

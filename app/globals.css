@@ -23,7 +23,7 @@
 
 .nav__background {
   @apply bg-white bg-opacity-90 backdrop-blur-xl dark:bg-primary_black dark:bg-opacity-90 
-  dark:backdrop-blur-xl transition ease-in-out duration-300
+  dark:backdrop-blur-xl transition ease-in-out duration-150
 }
 
 .text-theme-dark {

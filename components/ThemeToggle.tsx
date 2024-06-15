@@ -40,9 +40,9 @@ const ThemeToggle = () => {
       >
         <motion.div 
        
-        animate={theme === 'dark' ? {x:30} : {x:0}}
+        animate={theme === 'dark' ? {x:28} : {x:0}}
+        transition={{ type: 'tween', stiffness: 30 }}
         className='bg-white rounded-full p-3 '>
-
         </motion.div>
         
       </div>
