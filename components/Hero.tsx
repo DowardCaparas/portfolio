@@ -9,7 +9,7 @@ import PageWrapper from '@/app/PageWrapper';
 const Hero = () => {
   return (
     <PageWrapper>
-      <div className='w-full container__padding flex max-lg:flex-wrap 
+      <section className='w-full container__padding flex max-lg:flex-wrap 
       gap-10 justify-between items-start'
       >
         <div
@@ -47,7 +47,7 @@ const Hero = () => {
             className='object-contain sm:max-lg:w-3/4'
           />
         </div>
-      </div>
+      </section>
     </PageWrapper>
   );
 };
