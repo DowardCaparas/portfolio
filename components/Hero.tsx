@@ -38,7 +38,7 @@ const Hero = () => {
             />
           </Link>
 
-          <Link href=''>
+          <Link href='/CAPARAS_DOUNHUWARD_RESUME.pdf'>
             <CustomButton
               title='View CV'
               containerStyles='border-2 border-secondary_gray dark:border-light_gray 
