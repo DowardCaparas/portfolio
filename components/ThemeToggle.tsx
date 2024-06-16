@@ -35,7 +35,7 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleClick}>
       <div
-        className='flex border-2 rounded-full w-16  bg-zinc-300 p-1
+        className='flex border-2 rounded-full w-16 bg-zinc-300 p-1
          dark:bg-secondary_purple transition duration-300 ease-in-out justify-start items-start'
       >
         <motion.div 

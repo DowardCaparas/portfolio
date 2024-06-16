@@ -22,12 +22,12 @@ const ProjectCard = ({ projects }: ProjectList) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-3">
+    <div className="w-full flex flex-col gap-6">
       {projects.map((item, index) => (
         <div
           key={index}
           className="flex max-md:flex-col justify-start items-start 
-        gap-4 p-5 rounded dark:bg-transparent bg-primary_gray"
+        gap- p-5 rounded dark:bg-transparent shadow-sm shadow-light_gray bg-primary_gray"
         >
           {/*Image of Project */}
           <Link

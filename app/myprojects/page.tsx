@@ -1,14 +1,18 @@
-import { ProjectCard, Title } from "@/components";
-import { projects } from "@/constants";
-import PageWrapper from "../PageWrapper";
+import { ProjectCard, Title } from '@/components';
+import { projects } from '@/constants';
+import PageWrapper from '../PageWrapper';
 
 const Projects = () => {
   return (
     <PageWrapper>
-      <section className="w-full container__padding">
-        <Title label="Projects" />
+      <section className='w-full '>
 
-        <ProjectCard projects={projects} />
+        <Title label='Projects' />
+
+        <div className='container__padding'>
+          <ProjectCard projects={projects} />
+        </div>
+
       </section>
     </PageWrapper>
   );

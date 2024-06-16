@@ -5,10 +5,11 @@ import PageWrapper from "../PageWrapper";
 const About = () => {
   return (
     <PageWrapper>
-      <section className="w-full container__padding">
-        <Title label="About Me" />
+      <section className="w-full ">
 
-        <div className="flex max-md:flex-col justify-between items-start gap-6">
+          <Title label="About Me" />
+
+        <div className="flex max-md:flex-col justify-between items-start gap-6 container__padding">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl w-full border_bottom font-semibold">
               Education
@@ -33,12 +34,14 @@ const About = () => {
               <p>(2019 - 2024)</p>
             </div>
           </div>
+          
           <PeronalInfoCard info={personalInfo} />
-        </div>
 
-        <div className="my-10">
-          <Skills />
+         
         </div>
+        <div className="mt-10 container__padding">
+            <Skills />
+          </div>
       </section>
     </PageWrapper>
   );
