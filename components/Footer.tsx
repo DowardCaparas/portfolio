@@ -7,13 +7,13 @@ const Footer = () => {
     <footer className='container__padding mb-10 text-theme-dark'>
       <div className='flex max-md:flex-col justify-between items-start gap-y-10'>
         <div className='flex flex-col justify-start items-start gap-6 md:w-1/3'>
-          
-        <Link href='/' className='font-bold text-xl ' aria-label='Home' >
+          <Link href='/' className='font-bold text-xl ' aria-label='Home'>
             Dwr.<span className='text-secondary_purple'>Dev</span>
           </Link>
 
           <p>
-          Empowering creativity and innovation, one line of code at a time. Let&apos;s build the future together.
+            Empowering creativity and innovation, one line of code at a time.
+            Let&apos;s build the future together.
           </p>
         </div>
 
@@ -37,10 +37,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='w-full border_top mt-20 grid'>
-         <p className='place-self-center mt-10'>Copyright &copy; 2024 Dounhuward Caparas All Rights Reserved.</p>
+      <div className='w-full border_top mt-20 flex flex-col justify-center items-center text-justify-center'>
+        <p className='mt-5'>Copyright &copy; 2024 Dounhuward Caparas</p>
+        <p>All Rights Reserved.</p>
       </div>
-      
     </footer>
   );
 };

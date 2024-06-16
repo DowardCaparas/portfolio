@@ -27,7 +27,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
         <div
           key={index}
           className="flex max-md:flex-col justify-start items-start 
-        gap- p-5 rounded dark:bg-transparent shadow-sm shadow-light_gray bg-primary_gray"
+        gap-4 p-5 rounded dark:bg-transparent shadow-sm shadow-light_gray bg-primary_gray"
         >
           {/*Image of Project */}
           <Link

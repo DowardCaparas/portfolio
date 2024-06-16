@@ -7,7 +7,7 @@ const About = () => {
     <PageWrapper>
       <section className="w-full ">
 
-          <Title label="About Me" />
+          <Title label="About Me"/>
 
         <div className="flex max-md:flex-col justify-between items-start gap-6 container__padding">
           <div className="flex flex-col gap-4">

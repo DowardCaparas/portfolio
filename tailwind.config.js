@@ -19,6 +19,7 @@ module.exports = {
          primary_gray: '#EEEEEF',
          secondary_gray: '#D7D7DB',
          darked_gray: '#111016',
+         moreDarked_gray: '#0D0C12',
          paragraph: '#5D5D61',
          light_gray: '#48484D',
          primary_purple: '#714BB2',

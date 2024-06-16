@@ -19,7 +19,7 @@ const MobileLinks = () => {
           pathname === home
             ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
             : ""
-        } hover:bg-light_gray active:bg-darked_gray px-3 py-1`}
+        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
       >
         <HomeIcon />
       </div>
@@ -29,7 +29,7 @@ const MobileLinks = () => {
           pathname === about
             ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
             : ""
-        } hover:bg-light_gray active:bg-darked_gray px-3 py-1`}
+        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
       >
         <InfoIcon />
       </div>
@@ -39,7 +39,7 @@ const MobileLinks = () => {
           pathname === services
             ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
             : ""
-        } hover:bg-light_gray active:bg-darked_gray px-3 py-1`}
+        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
       >
         <ServiceIcon />
       </div>
@@ -49,7 +49,7 @@ const MobileLinks = () => {
           pathname === projects
             ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
             : ""
-        } hover:bg-light_gray active:bg-darked_gray px-3 py-1`}
+        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
       >
         <CaseIcon />
       </div>
@@ -59,7 +59,7 @@ const MobileLinks = () => {
           pathname === contact
             ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
             : ""
-        } hover:bg-light_gray active:bg-darked_gray px-3 py-1`}
+        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
       >
         <PhoneIcon />
       </div>

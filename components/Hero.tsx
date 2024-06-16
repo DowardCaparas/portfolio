@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <PageWrapper>
       <section className='w-full container__padding flex max-lg:flex-wrap 
-      gap-10 justify-between items-start'
+      gap-10 justify-between items-start mt-32'
       >
         <div
           className='flex flex-col justify-start items-start gap-4 md:w-2/3 mt-8
@@ -27,14 +27,27 @@ const Hero = () => {
             and design. Let&apos;s create something extraordinary together!
           </p>
 
-          <Link href='/myservices' className='mt-5'>
+          <div className='flex justify-start items-center gap-4 mt-5'>
+
+          <Link href='/myservices'>
             <CustomButton
               title='Services'
               containerStyles='bg-secondary_purple hover:bg-primary_purple
-              active:bg-primary_yellow'
-              textStyles='text-white text-md font-bold'
+              active:bg-secondary_purple'
+              textStyles='text-white text-md font-semibold'
             />
           </Link>
+
+          <Link href=''>
+            <CustomButton
+              title='View CV'
+              containerStyles='border-2 border-secondary_gray dark:border-light_gray 
+              hover:bg-light_gray active:bg-transparent'
+              textStyles='text-md font-semibold text-light_gray dark:text-secondary_gray'
+            />
+          </Link>
+
+          </div>
         </div>
 
         <div className='w-auto h-auto  flex justify-end items-end max-sm:mt-8'>
