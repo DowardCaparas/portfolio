@@ -13,8 +13,23 @@
   text-align-last: center;
 }
 
-.nav__padding {
-  @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 pt-5
+.w_auto_image {
+  width: auto;
+  height: auto;
+}
+
+.nav__background {
+  @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 pt-5 
+}
+
+.nav__background {
+  @apply bg-primary_gray dark:bg-darked_gray dark:bg-opacity-90 dark:backdrop-blur-2xl
+  bg-opacity-90 backdrop-blur-2xl
+}
+
+.title__background {
+  @apply bg-zinc-300 dark:bg-moreDarked_gray dark:bg-opacity-90 dark:backdrop-blur-2xl
+  bg-opacity-90 backdrop-blur-2xl
 }
 
 .container__padding {
@@ -22,7 +37,7 @@
 }
 
 .text-theme-dark {
-  @apply dark:text-white transition ease-in-out duration-300;
+  @apply dark:text-white transition duration-500 ease-in-out;
 }
 
 .border_bottom {
@@ -34,13 +49,14 @@
 }
 
 body {
-  @apply dark:bg-primary_black bg-white transition ease-in-out duration-150
+  @apply dark:bg-gradient-to-l dark:from-primary_black dark:to-darked_gray bg-gradient-to-l
+   from-white to-primary_gray transition duration-500 ease-in-out
 }
 
 section {
-  @apply mt-48 max-md:mt-52 text-theme-dark mb-28
+  @apply mt-48 max-md:mt-52 text-theme-dark mb-28 
 }
 
 p {
-  @apply text-sm dark:text-gray-300 text-paragraph
+  @apply text-sm dark:text-gray-300 text-paragraph transition duration-500 ease-in-out
 }

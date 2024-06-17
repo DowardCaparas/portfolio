@@ -1,7 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import Image from 'next/image';
+import { sun, moon } from '@/public';
 
 const ThemeToggle = () => {
 
@@ -35,15 +37,32 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleClick}>
       <div
-        className='flex border-2 rounded-full w-12 bg-zinc-300 p-1
-         dark:bg-secondary_purple transition duration-300 ease-in-out justify-start items-start'
+        className='flex border-2 rounded-full w-12 bg-zinc-300 p-1 relative
+         dark:bg-secondary_purple transition duration-500 ease-in-out justify-center items-center'
       >
         <motion.div 
        
-        animate={theme === 'dark' ? {x:20} : {x:0}}
+        animate={theme === 'dark' ? {x:10} : {x:-10}}
         transition={{ type: 'tween', stiffness: 30 }}
-        className='bg-white rounded-full p-2 '>
+        className='bg-white dark:bg-darked_gray rounded-full p-2 z-10'>
         </motion.div>
+
+        <div className='absolute flex justify-between items-center'>
+          <Image 
+              src={moon}
+              alt='moon'
+              height={18}
+              width={18}
+              className='object-contain dark:opacity-100 opacity-0'
+          />
+          <Image 
+              src={sun}
+              alt='moon'
+              height={18}
+              width={18}
+              className='object-contain dark:opacity-0 '
+          />
+        </div>
         
       </div>
     </button>

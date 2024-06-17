@@ -1,5 +1,6 @@
 import { facebookIcon, twitterIcon, instagramIcon, linkedinIcon,  userInterface, 
-         monitor, fast, mobile, code, filecode,
+         monitor, fast, mobile, code, filecode, jsIcon, tsIcon, reactIcon, nextjsIcon,
+         framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva,
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
@@ -26,27 +27,83 @@ export const personalInfo = [
     {title: 'Phone No.', label: '+63967*****57' },
 ];
 
-export const skills = [
+export const aboutData = [
     {
-        title: 'Frontend',
-        lists: [
-            {name: 'JavaScript' },
-            {name: 'TypeScript' },
-            {name: 'NEXT.js' },
-            {name: 'Tailwind' },
-            {name: 'React' },
-            {name: 'Framer' },
-            {name: 'HTML' },
-            {name: 'CSS' },
-        ],
+        title: 'Skills',
+        info: [
+            {
+                title: 'Web Development:',
+                lists: [
+                    {data: jsIcon },
+                    {data: tsIcon },
+                    {data: nextjsIcon },
+                    {data: tailwindIcon },
+                    {data: reactIcon },
+                    {data: framer },
+                    {data: htmlIcon },
+                    {data: cssIcon },
+                ],
+            },
+        
+            {
+                title: 'Graphic Design:',
+                lists: [
+                    {data: photoshopIcon },
+                    {data: canva },
+                ],
+            },
+        ]
     },
-
     {
-        title: 'Other',
-        lists: [
-            {name: 'Photoshop' },
-            {name: 'Canva' },
-        ],
+        title: 'Awards',
+        info: [
+            {
+                title: 'Best Capstone:',
+                lists: [
+                   
+                    {data: 'Simian a mobile educational game for primary level in learning Space Science (2024)' },
+                ],
+            },
+            {
+                title: 'Best in Computer:',
+                lists: [
+                   
+                    {data: '2014 (Theory)' },
+                ],
+            },
+            {
+                title: 'Best in Computer:',
+                lists: [
+                   
+                    {data: '2015 (Hands On)' },
+                ],
+            },
+        
+        ]
+    },
+    {
+        title: 'Experience',
+        info: [
+            {
+                title: 'Internship:',
+                lists: [
+                    {data: 'Philipphine Integrated Manufacturing and Engineering Solutions Corporation (2023-2024)'},
+                ],
+            },
+        
+        ]
+    },
+    {
+        title: 'Credentials',
+        info: [
+            {
+                title: 'Information Technology Diploma:',
+                lists: [
+                    {data: 'Cavite State University (2019-2024)'},
+                ],
+            },
+        
+        ]
     },
 
 ];

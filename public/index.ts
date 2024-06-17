@@ -21,8 +21,22 @@ import hamburger from './hamburger.svg'
 import moon from './moon.svg'
 import sun from './sun.svg'
 
+//Skills
+import jsIcon from './jsIcon.svg'
+import tsIcon from './tsIcon.svg'
+import reactIcon from './reactIcon.svg'
+import nextjsIcon from './nextjsIcon.svg'
+import framer from './framer.svg'
+import tailwindIcon from './tailwindIcon.svg'
+import htmlIcon from './htmlIcon.svg'
+import cssIcon from './cssIcon.svg'
+import photoshopIcon from './photoshopIcon.svg'
+import canva from './canva.svg'
+
+
 export {
     arrowup, facebookIcon, fileIcon, hamburger, moon,  instagramIcon, linkedinIcon, message, 
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
-    filecode, fast, sun, chevronleft, chevronright,
+    filecode, fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon,
+    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, 
 }

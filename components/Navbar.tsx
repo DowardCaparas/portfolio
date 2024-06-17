@@ -28,8 +28,8 @@ const Navbar = () => {
   /*End of adding background when scrolled */
 
   return (
-    <nav className='w-full top-0 nav__padding z-10 fixed border_bottom md:py-5
-     bg-primary_gray dark:bg-darked_gray'>
+    <nav className='w-full top-0 nav__padding nav__background z-10 fixed border_bottom md:py-5
+     '>
 
       <div className='w-full flex justify-between items-center'>
         {/*Logo */}
