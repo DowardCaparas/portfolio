@@ -20,12 +20,6 @@ export const socials = [
     {icon: linkedinIcon, url: '#'},
 ];
 
-export const personalInfo = [
-    {title: 'Name', label: 'Dounhuward B. Caparas' },
-    {title: 'Email', label: 'caparasdounhuward@gmail.com' },
-    {title: 'Address', label: 'Naic, Cavite' },
-    {title: 'Phone No.', label: '+63967*****57' },
-];
 
 export const aboutData = [
     {
