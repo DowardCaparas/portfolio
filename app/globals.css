@@ -37,7 +37,7 @@
 }
 
 .text-theme-dark {
-  @apply dark:text-white transition duration-500 ease-in-out;
+  @apply dark:text-white transition duration-300 ease-in-out;
 }
 
 .border_bottom {
@@ -53,13 +53,13 @@
 }
 
 .mobile_link_background {
-  @apply cursor-pointer fill-secondary_purple transition duration-150 ease-in-out 
+  @apply cursor-pointer fill-secondary_purple transition duration-300 ease-in-out 
   text-secondary_purple
 }
 
 body {
-  @apply dark:bg-gradient-to-l dark:from-primary_black dark:to-darked_gray bg-gradient-to-l
-   from-white to-primary_gray transition duration-500 ease-in-out
+  @apply dark:bg-gradient-to-r dark:from-moreDarked_gray dark:to-darked_purple bg-gradient-to-l
+   from-white to-primary_gray transition duration-300 ease-in-out 
 }
 
 section {
@@ -67,5 +67,5 @@ section {
 }
 
 p {
-  @apply text-sm dark:text-gray-300 text-paragraph transition duration-500 ease-in-out
+  @apply text-sm dark:text-gray-300 text-paragraph transition duration-300 ease-in-out
 }

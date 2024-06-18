@@ -5,7 +5,7 @@ import PageWrapper from '../PageWrapper';
 
 const Services = () => {
   return (
-    <PageWrapper>
+
       <section className='w-full'>
         <Title label='Services' />
         
@@ -35,7 +35,7 @@ const Services = () => {
           ))}
         </div>
       </section>
-    </PageWrapper>
+
   );
 };
 

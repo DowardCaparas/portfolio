@@ -6,7 +6,7 @@ import PageWrapper from '../PageWrapper';
 
 const Contact = () => {
   return (
-    <PageWrapper>
+
       <section className='w-full'>
         <div className='flex flex-col mb-10'>
           <Title label='Contact' />
@@ -53,7 +53,7 @@ const Contact = () => {
           <TextComponent />
         </div>
       </section>
-    </PageWrapper>
+
   );
 };
 

@@ -26,7 +26,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
       {projects.map((item, index) => (
         <div
           key={index}
-          className="flex max-md:flex-col justify-start items-start 
+          className="flex max-md:flex-col justify-start items-start
         gap-4 p-5 rounded dark:bg-transparent shadow-sm shadow-light_gray bg-primary_gray"
         >
           {/*Image of Project */}
@@ -40,7 +40,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
               alt={item.name}
               height={450}
               width={500}
-              className="object-contain"
+              className="object-contain w-full"
               quality={100}
             />
           </Link>

@@ -9,12 +9,13 @@ const Hero = () => {
   return (
     <PageWrapper>
       <section
-        className="w-full container__padding flex max-md:flex-wrap gap-x-20 gap-y-12 
-        justify-between items-start md:mt-44 mt-32 max-md:flex-col-reverse"
+        className="w-full container__padding flex max-lg:flex-wrap gap-x-20 gap-y-12 
+        justify-between items-start md:mt-44 mt-32 max-lg:flex-col-reverse max-lg:text-center
+        max-lg:justify-center max-lg:items-center"
       >
         <div
-          className="flex flex-col justify-start items-start gap-2 md:w-2/4 
-        text-theme-dark"
+          className="flex flex-col justify-start items-start gap-2 lg:w-2/4 
+        text-theme-dark max-lg:justify-center max-lg:items-center"
         >
           <h4>Hello, I&apos;m Dounhuward B. Caparas</h4>
           <p className="-mt-2">Frontend Developer</p>
@@ -53,7 +54,7 @@ const Hero = () => {
             alt="Doward Caparas"
             height={502}
             width={610}
-            className="object-contain sm:max-lg:w-3/4 w_auto_image"
+            className="object-contain max-lg:w-3/4 w_auto_image"
           />
         </div>
       </section>

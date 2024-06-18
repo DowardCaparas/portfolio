@@ -47,7 +47,7 @@ const TextComponent = () => {
   return (
     <form 
         onSubmit={handleSubmit}
-        className='flex flex-col gap-6 md:w-1/2 w-full max-md:mt-10 text-sm'>
+        className='flex flex-col gap-6 sm:w-1/2 w-full max-md:mt-10 text-sm'>
               <div className='flex flex-col gap-2'>
                 <label htmlFor={id + '-email'}>Your Email</label>
                 <input

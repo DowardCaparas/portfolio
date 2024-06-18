@@ -4,7 +4,7 @@ import PageWrapper from '../PageWrapper';
 
 const Projects = () => {
   return (
-    <PageWrapper>
+
       <section className='w-full '>
 
         <Title label='Projects' />
@@ -14,7 +14,7 @@ const Projects = () => {
         </div>
 
       </section>
-    </PageWrapper>
+
   );
 };
 

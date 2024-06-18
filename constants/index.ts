@@ -108,7 +108,7 @@ export const projects = [
         image: ArtokuImage.src, 
         category:'#Accounting',
         date: '2024',
-        description: 'Artoku: is a comprehensive asset and money management platform designed to assist individuals and businesses in effectively managing their financial resources. With a team of experienced financial planners and cutting-edge technology, Artoku offers a range of services tailored to meet the diverse needs of investors, ensuring the growth and development of their assets.',
+        description: 'Artoku is an asset and money management platform that helps individuals and businesses manage their finances. Leveraging experienced financial planners and advanced technology, Artoku provides tailored services to support the growth and development of investors assets.',
         url: 'https://dowardcaparas.github.io/Artoku_Landing_page/'
     },
     {
@@ -116,7 +116,7 @@ export const projects = [
         image: IDSGadgetsImage.src, 
         category:'#Devices',
         date: '2024',
-        description: 'iDSGadgets: Where innovation meets quality, and creativity meets productivity. We are on a mission to bridge the gap between imagination and realization by offering top-tier gadgets that empower individuals and businesses to elevate their tech game. From cutting-edge devices to innovative accessories, iDSGadgets is your ultimate destination for unlocking new possibilities in technology.',
+        description: 'iDSGadgets: Where innovation meets quality. Our mission is to bridge imagination and reality with top-tier gadgets that empower individuals and businesses. From cutting-edge devices to innovative accessories, iDSGadgets is your ultimate destination for unlocking new tech possibilities.',
         url: 'https://dowardcaparas.github.io/iDSGadgets/'
     },
 ];

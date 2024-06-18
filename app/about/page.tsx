@@ -4,7 +4,7 @@ import PageWrapper from "../PageWrapper";
 
 const About = () => {
   return (
-    <PageWrapper>
+
       <section className="w-full ">
         <Title label="About Me" />
         <div className="container__padding flex justify-between items-center gap-6">
@@ -13,7 +13,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </PageWrapper>
+
   );
 };
 
