@@ -19,8 +19,8 @@ const MobileLinks = () => {
         return (
           <div
             key={index}
-            className={`active:bg-secondary_gray dark:active:bg-light_gray w-12 flex flex-col 
-              justify-center items-center p-1 hover:bg-zinc-300 dark:hover:bg-moreDarked_gray
+            className={`w-full active:bg-secondary_gray dark:active:bg-zinc-600 flex flex-col 
+              justify-center items-center p-1 hover:bg-zinc-300 dark:hover:bg-light_gray
             ${
               pathname === link.url ? "border-b-2 border-secondary_purple" : ""
             }`}
@@ -33,6 +33,7 @@ const MobileLinks = () => {
                 }
               `}
             >
+              {/*Icons */}
               {IconComponent && IconComponent}
             </Link>
           </div>

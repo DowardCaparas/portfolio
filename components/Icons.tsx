@@ -5,8 +5,8 @@ export const iconsArray = [
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="30"
+        height="30"
         viewBox="0 0 24 24"
       >
         <path
@@ -23,8 +23,8 @@ export const iconsArray = [
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="30"
+        height="30"
         viewBox="0 0 24 24"
       >
         <path
@@ -41,14 +41,14 @@ export const iconsArray = [
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="30"
+        height="30"
         viewBox="0 0 24 24"
       >
         <path
           stroke="currentColor"
-          strokeWidth="2"
-          d="M10 3v4a1 1 0 0 1-1 1H5m5 4-2 2 2 2m4-4 2 2-2 2m5-12v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"
+          strokeWidth="1.5"
+          d="M15 4v3a1 1 0 0 1-1 1h-3m2 10v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L6.7 8.35A1 1 0 0 1 7.46 8H9m-1 4H4m16-7v10a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V7.87a1 1 0 0 1 .24-.65l2.46-2.87a1 1 0 0 1 .76-.35H19a1 1 0 0 1 1 1Z"
         />
       </svg>
     ),
@@ -59,8 +59,8 @@ export const iconsArray = [
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="30"
+        height="30"
         viewBox="0 0 24 24"
       >
         <path
@@ -77,8 +77,8 @@ export const iconsArray = [
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="30"
+        height="30"
         viewBox="0 0 24 24"
       >
         <path
