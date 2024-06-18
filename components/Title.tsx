@@ -6,9 +6,6 @@ interface TitleProps {
 
 const Title = ({label}: TitleProps) => {
  
-
-
-
   return (
     <div className="w-full title__background py-4 md:-mt-32 -mt-28 fixed">
       <h2

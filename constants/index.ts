@@ -1,16 +1,16 @@
 import { facebookIcon, twitterIcon, instagramIcon, linkedinIcon,  userInterface, 
-         monitor, fast, mobile, code, filecode, jsIcon, tsIcon, reactIcon, nextjsIcon,
-         framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva,
+         monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon,
+         framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, 
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
 
 export const navlinks = [
-    {title: 'Home', url: '/' },
-    {title: 'About', url: '/about' },
-    {title: 'Services', url: '/myservices' },
-    {title: 'Projects', url: '/myprojects' },
-    {title: 'Contact', url: '/contact' },
+    {title: 'Home', url: '/', icon: 'homeIcon'},
+    {title: 'About', url: '/about' , icon: 'aboutIcon'},
+    {title: 'Services', url: '/myservices' , icon: 'caseIcon'},
+    {title: 'Projects', url: '/myprojects' , icon: 'folderIcon'},
+    {title: 'Contact', url: '/contact' , icon: 'phoneIcon'},
 ];
 
 export const socials = [
@@ -156,7 +156,7 @@ export const myServices = [
     { 
         title: 'Custom Web App Development',
         paragraph: `Build bespoke web applications tailored to the company's specific needs.`,
-        icon: filecode
+        icon: fileIcon
     },
 
 ];

@@ -37,14 +37,15 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleClick}>
       <div
-        className='flex border-2 rounded-full w-12 bg-zinc-300 p-1 relative
-         dark:bg-secondary_purple transition duration-500 ease-in-out justify-center items-center'
+        className='flex rounded-full w-12 bg-zinc-300 p-1 relative ring-2 ring-light_gray 
+        dark:ring-primary_gray dark:bg-secondary_purple transition duration-500 ease-in-out justify-center 
+        items-center'
       >
         <motion.div 
        
         animate={theme === 'dark' ? {x:10} : {x:-10}}
         transition={{ type: 'tween', stiffness: 30 }}
-        className='bg-white dark:bg-darked_gray rounded-full p-2 z-10'>
+        className='bg-white rounded-full p-2 z-10'>
         </motion.div>
 
         <div className='absolute flex justify-between items-center'>

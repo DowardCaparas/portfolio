@@ -1,68 +1,43 @@
 "use client";
 
-import { CaseIcon, HomeIcon, InfoIcon, PhoneIcon, ServiceIcon } from "./Icons";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { navlinks } from "@/constants";
+
+//for mobile icons
+import { iconsArray } from "./Icons";
 
 const MobileLinks = () => {
   const pathname = usePathname();
 
-  const home = "/";
-  const about = "/about";
-  const services = "/myservices";
-  const projects = "/myprojects";
-  const contact = "/contact";
-
   return (
     <div className="w-full mt-3 flex justify-between items-center px-2">
-      <div
-        className={`${
-          pathname === home
-            ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
-            : ""
-        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
-      >
-        <HomeIcon />
-      </div>
-
-      <div
-        className={`${
-          pathname === about
-            ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
-            : ""
-        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
-      >
-        <InfoIcon />
-      </div>
-
-      <div
-        className={`${
-          pathname === services
-            ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
-            : ""
-        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
-      >
-        <ServiceIcon />
-      </div>
-
-      <div
-        className={`${
-          pathname === projects
-            ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
-            : ""
-        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
-      >
-        <CaseIcon />
-      </div>
-
-      <div
-        className={`${
-          pathname === contact
-            ? "border-b-2 border-primary_purple transition duration-150 ease-in-out"
-            : ""
-        } dark:hover:bg-light_gray hover:bg-secondary_gray dark:active:bg-darked_gray active:bg-primary_gray px-3 py-1`}
-      >
-        <PhoneIcon />
-      </div>
+      {navlinks.map((link, index) => {
+        const IconComponent = iconsArray.find(
+          (icon) => icon.name === link.icon
+        )?.svg;
+        return (
+          <div
+            key={index}
+            className={`active:bg-secondary_gray dark:active:bg-light_gray w-12 flex flex-col 
+              justify-center items-center p-1 hover:bg-zinc-300 dark:hover:bg-moreDarked_gray
+            ${
+              pathname === link.url ? "border-b-2 border-secondary_purple" : ""
+            }`}
+          >
+            <Link
+              href={link.url}
+              className={`mobile_link_stroke 
+                ${
+                  pathname === link.url ? "mobile_link_background" : "fill-none"
+                }
+              `}
+            >
+              {IconComponent && IconComponent}
+            </Link>
+          </div>
+        );
+      })}
     </div>
   );
 };
