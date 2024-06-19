@@ -1,5 +1,5 @@
 import { facebookIcon, twitterIcon, instagramIcon, linkedinIcon,  userInterface, 
-         monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon,
+         monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon, gitIcon,
          framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, 
  } from "@/public";
 
@@ -46,6 +46,13 @@ export const aboutData = [
                     {data: canva },
                 ],
             },
+
+            {
+                title: 'Other:',
+                lists: [
+                    {data: gitIcon}
+                ],
+            },
         ]
     },
     {
@@ -62,14 +69,14 @@ export const aboutData = [
                 title: 'Best in Computer:',
                 lists: [
                    
-                    {data: '2014 (Theory)' },
+                    {data: 'Cavite Community Academy Inc. (2014) (Theory)' },
                 ],
             },
             {
                 title: 'Best in Computer:',
                 lists: [
                    
-                    {data: '2015 (Hands On)' },
+                    {data: 'Cavite Community Academy Inc. (2015) (Hands On)' },
                 ],
             },
         

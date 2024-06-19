@@ -76,7 +76,7 @@ const TextComponent = () => {
               <CustomButton 
               title='Send'
               containerStyles='bg-secondary_purple hover:bg-primary_purple 
-              active:bg-secondary_purple rounded-md sm:w-1/2' 
+              active:bg-secondary_purple sm:w-1/2' 
               textStyles='text-white text-md font-bold'  
             />
              

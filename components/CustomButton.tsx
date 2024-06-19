@@ -6,7 +6,7 @@ const CustomButton = ({title, containerStyles, textStyles, handleClick}: CustomB
   return (
    <button
       type='button'
-      className={`${containerStyles} | px-5 py-2 rounded-full`}
+      className={`${containerStyles} | px-5 py-2 rounded-full `}
       onClick={handleClick}
       aria-label={title}
    >

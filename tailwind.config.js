@@ -24,7 +24,7 @@ module.exports = {
          light_gray: '#48484D',
          primary_purple: '#714BB2',
          secondary_purple: '#8B5CF6',
-         darked_purple: "#180434",
+         darked_purple: "#0F002B",
       },
       
     },

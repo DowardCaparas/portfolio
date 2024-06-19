@@ -14,17 +14,13 @@ const Navbar = () => {
       className="w-full top-0 nav__padding nav__background z-10 fixed border_bottom md:py-5
      "
     >
-      <div className={`${pathname === '/' ? 'max-md:flex' : 'max-md:hidden'}`}>
+      <div className={`${pathname === "/" ? "max-md:flex" : "max-md:hidden"}`}>
         <div className="w-full flex justify-between items-center">
           {/*Logo */}
           <div className="flex max-md:flex-row-reverse justify-center items-center gap-6">
-            <Link
-              href="/"
-              className="font-bold text-xl mr-3 text-theme-dark"
-              aria-label="Home"
-            >
+            <h3 className="font-bold text-xl mr-3 text-theme-dark">
               Dwr.<span className=" text-secondary_purple">Dev</span>
-            </Link>
+            </h3>
 
             {/*Links */}
             <div className="flex justify-center items-center gap-2 max-md:hidden">

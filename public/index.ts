@@ -19,6 +19,7 @@ import hamburger from './hamburger.svg'
 import fileIcon from './fileIcon.svg'
 import moon from './moon.svg'
 import sun from './sun.svg'
+import gitIcon from './gitIcon.svg'
 
 
 //Skills
@@ -37,5 +38,5 @@ export {
     arrowup, facebookIcon, hamburger, moon,  instagramIcon, linkedinIcon, message, 
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
     fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon,
-    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon,
+    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, gitIcon,
 }

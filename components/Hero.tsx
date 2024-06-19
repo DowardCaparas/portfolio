@@ -23,7 +23,7 @@ const Hero = () => {
             Converting imagination into Digital Reality
           </h1>
           <p className="text-sm">
-            I&apos;m dedicated for crafting innovative solutions through coding
+            I&apos;m a 24 year old dedicated for crafting innovative solutions through coding
             and design. Let&apos;s create something extraordinary together!
           </p>
 
@@ -40,7 +40,7 @@ const Hero = () => {
             <Link href="/CAPARAS_DOUNHUWARD_RESUME.pdf" passHref>
               <CustomButton
                 title="View CV"
-                containerStyles="border-2 border-secondary_gray dark:border-light_gray 
+                containerStyles="border-2 border-secondary_gray dark:border-primary_gray 
                                  hover:bg-light_gray active:bg-transparent"
                 textStyles="text-md font-semibold text-light_gray dark:text-secondary_gray"
               />
