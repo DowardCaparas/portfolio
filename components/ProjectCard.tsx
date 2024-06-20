@@ -22,7 +22,7 @@ const ProjectCard = ({ projects }: ProjectList) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-6">
+    <div className="w-full grid grid-cols-1 sm:max-md:grid-cols-2 grid-flow-row gap-6">
       {projects.map((item, index) => (
         <div
           key={index}
@@ -46,7 +46,8 @@ const ProjectCard = ({ projects }: ProjectList) => {
           </Link>
 
           {/*Details */}
-          <div className="w-full flex flex-col justify-start items-start gap-4 mt-3 border-t py-1 border-gray-300">
+          <div className="w-full flex flex-col justify-start items-start gap-4 mt-3 border-t 
+          py-1 border-gray-300">
           
             <div className="flex justify-between items-center w-full">
               <p>{item.category}</p>

@@ -26,23 +26,13 @@ const AboutData = () => {
             <div
               key={index}
               onClick={() => setInfoIndex(index)}
-              className={`text-md font-medium
-                ${
-                  infoIndex === index
-                    ? ""
-                    : "dark:hover:text-secondary_gray hover:text-gray-600 cursor-pointer"
-                }
-                `}
+              className={`${
+                infoIndex === index
+                  ? "border-b-2 border-secondary_purple text-gray-500"
+                  : "hover:text-gray-400 cursor-pointer"
+              }`}
             >
-              <div
-                className={`${
-                  infoIndex === index
-                    ? "border-b-2 border-secondary_purple"
-                    : ""
-                }`}
-              >
-                {item.title}
-              </div>
+              {item.title}
             </div>
           ))}
         </div>
@@ -61,8 +51,8 @@ const AboutData = () => {
                         <Image
                           src={item.data}
                           alt="icon"
-                          height={35}
-                          width={35}
+                          height={30}
+                          width={30}
                           className="object-contain"
                         />
                       </div>

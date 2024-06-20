@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Hero, Loading } from "@/components";
 
-export default function Home() {
+ const Home = () => {
   return (
     <main className="overflow-hidden">
       <Suspense fallback={<Loading />}>
@@ -10,3 +10,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home

@@ -37,31 +37,31 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleClick}>
       <div
-        className='flex rounded-full w-12 bg-zinc-300 p-1 relative ring-2 ring-light_gray 
-        dark:ring-primary_gray dark:bg-secondary_purple transition duration-500 ease-in-out justify-center 
+        className='flex rounded-full w-12 bg-zinc-500 p-2 relative ring-2 ring-light_gray 
+        dark:ring-primary_gray dark:bg-secondary_purple transition duration-150 ease-in-out justify-center 
         items-center'
       >
         <motion.div 
        
-        animate={theme === 'dark' ? {x:10} : {x:-10}}
-        transition={{ type: 'tween', stiffness: 30 }}
-        className='bg-white rounded-full p-2 z-10'>
+        animate={theme === 'dark' ? {x:14} : {x:-14}}
+        transition={{ type: 'tween'}}
+        className='bg-white rounded-full p-3 z-10 absolute'>
         </motion.div>
 
         <div className='absolute flex justify-between items-center'>
           <Image 
               src={moon}
               alt='moon'
-              height={18}
-              width={18}
-              className='object-contain dark:opacity-100 opacity-0'
+              height={15}
+              width={15}
+              className='object-contain dark:opacity-100 opacity-0 -translate-x-2'
           />
           <Image 
               src={sun}
               alt='moon'
-              height={18}
-              width={18}
-              className='object-contain dark:opacity-0 '
+              height={15}
+              width={15}
+              className='object-contain dark:opacity-0 translate-x-2'
           />
         </div>
         

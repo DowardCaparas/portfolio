@@ -2,14 +2,15 @@ import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { HeroBg } from "@/public/images";
 import Link from "next/link";
-import PageWrapper from "@/app/PageWrapper";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Hero = () => {
 
   return (
-    <PageWrapper>
+
       <section
-        className="w-full container__padding flex max-lg:flex-wrap gap-x-20 gap-y-12 
+        className="flex max-lg:flex-wrap gap-x-20 gap-y-12 
         justify-between items-start md:mt-44 mt-32 max-lg:flex-col-reverse max-lg:text-center
         max-lg:justify-center max-lg:items-center"
       >
@@ -58,7 +59,7 @@ const Hero = () => {
           />
         </div>
       </section>
-    </PageWrapper>
+
   );
 };
 

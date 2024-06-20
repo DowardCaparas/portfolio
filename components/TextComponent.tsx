@@ -23,7 +23,7 @@ const TextComponent = () => {
       event.preventDefault();
       const formData = new FormData(event.currentTarget);
   
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/actions/sendEmail', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

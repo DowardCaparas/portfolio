@@ -1,4 +1,4 @@
-import { facebookIcon, twitterIcon, instagramIcon, linkedinIcon,  userInterface, 
+import { facebookIcon, telegramIcon, linkedinIcon,  userInterface, 
          monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon, gitIcon,
          framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, 
  } from "@/public";
@@ -15,8 +15,7 @@ export const navlinks = [
 
 export const socials = [
     {icon: facebookIcon, url: 'https://www.facebook.com/doward.caparas?mibextid=ZbWKwL'},
-    {icon: twitterIcon, url: '#'},
-    {icon: instagramIcon, url: '#'},
+    {icon: telegramIcon, url: 'https://t.me/dowardcaparas'},
     {icon: linkedinIcon, url: '#'},
 ];
 
@@ -62,7 +61,7 @@ export const aboutData = [
                 title: 'Best Capstone:',
                 lists: [
                    
-                    {data: 'Simian a mobile educational game for primary level in learning Space Science (2024)' },
+                    {data: 'Simian a mobile educational game for primary level in learning Space Science (2023)' },
                 ],
             },
             {
@@ -76,7 +75,7 @@ export const aboutData = [
                 title: 'Best in Computer:',
                 lists: [
                    
-                    {data: 'Cavite Community Academy Inc. (2015) (Hands On)' },
+                    {data: 'Cavite Community Academy Inc. (2015) (Hands-On)' },
                 ],
             },
         

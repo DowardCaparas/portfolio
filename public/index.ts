@@ -1,6 +1,6 @@
 import arrowup from './arrowup.svg'
 import facebookIcon from './facebookIcon.svg'
-import instagramIcon from './instagramIcon.svg'
+import telegramIcon from './telegramIcon.svg'
 import linkedinIcon from './linkedinIcon.svg'
 import message from './message.svg'
 import twitterIcon from './twitterIcon.svg'
@@ -9,6 +9,7 @@ import chevronup from './chevronup.svg'
 import chevronleft from './chevronleft.svg'
 import chevronright from './chevronright.svg'
 import envelope from './envelope.svg'
+import gmail from './gmail.svg'
 import plane from './plane.svg'
 import monitor from './monitor.svg'
 import userInterface from './userinterfacce.svg'
@@ -35,7 +36,7 @@ import photoshopIcon from './photoshopIcon.svg'
 import canva from './canva.svg'
 
 export {
-    arrowup, facebookIcon, hamburger, moon,  instagramIcon, linkedinIcon, message, 
+    arrowup, facebookIcon, hamburger, moon, telegramIcon, linkedinIcon, message, gmail,
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
     fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon,
     framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, gitIcon,

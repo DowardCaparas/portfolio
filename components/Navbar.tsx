@@ -11,7 +11,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full top-0 nav__padding nav__background z-10 fixed border_bottom md:py-5
+      className="w-full top-0 container__padding bg-secondary_gray dark:bg-moreDarked_gray 
+      z-10 fixed border_bottom pt-5 md:py-5
      "
     >
       <div className={`${pathname === "/" ? "max-md:flex" : "max-md:hidden"}`}>
@@ -30,7 +31,7 @@ const Navbar = () => {
                   className={`${
                     pathname === link.url
                       ? ""
-                      : "hover:bg-gray-300 hover:dark:bg-secondary_black w-full rounded transition duration-150 ease-in-out"
+                      : "hover:bg-gray-300 hover:dark:bg-secondary_black w-full rounded"
                   }`}
                 >
                   <Link href={link.url} aria-label="Link">
