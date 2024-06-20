@@ -38,8 +38,8 @@ const ThemeToggle = () => {
     <button onClick={handleClick}>
       <div
         className='flex rounded-full w-12 bg-zinc-500 p-2 relative ring-2 ring-light_gray 
-        dark:ring-primary_gray dark:bg-secondary_purple transition duration-150 ease-in-out justify-center 
-        items-center'
+        dark:ring-primary_gray dark:bg-secondary_purple transition duration-150 ease-in-out 
+        justify-center items-center'
       >
         <motion.div 
        

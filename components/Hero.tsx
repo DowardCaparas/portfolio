@@ -41,7 +41,7 @@ const Hero = () => {
             <Link href="/CAPARAS_DOUNHUWARD_RESUME.pdf" passHref>
               <CustomButton
                 title="View CV"
-                containerStyles="border-2 border-secondary_gray dark:border-primary_gray 
+                containerStyles="border border-secondary_gray dark:border-primary_gray 
                                  hover:bg-light_gray active:bg-transparent"
                 textStyles="text-md font-semibold text-light_gray dark:text-secondary_gray"
               />

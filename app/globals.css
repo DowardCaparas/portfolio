@@ -34,13 +34,8 @@
   @apply border-secondary_gray dark:border-light_gray border-t
 }
 
-.mobile_link_stroke {
-  @apply text-gray-500 dark:text-secondary_gray
-}
-
 .mobile_link_background {
-  @apply cursor-pointer fill-secondary_purple 
-  text-secondary_purple
+  @apply cursor-pointer fill-primary_black dark:fill-primary_gray
 }
 
 *{

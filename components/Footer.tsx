@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <div
         className="w-full mt-16 flex max-md:flex-col max-md:justify-center max-md:items-center
-        justify-start items-start gap-2 py-5 container__padding"
+        justify-start items-start gap-2 pt-5 pb-10 container__padding"
       >
         <p>Copyright &copy; 2024 Dounhuward Caparas</p>
         <p>All Rights Reserved.</p>

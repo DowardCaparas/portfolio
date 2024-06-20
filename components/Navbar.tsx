@@ -39,7 +39,7 @@ const Navbar = () => {
                       className={`py-1 px-3 dark:text-white text-sm
                           ${
                             pathname === link.url
-                              ? "border-b-2 border-gray-300 text-md"
+                              ? "border-b-2 border-light_gray text-md"
                               : ""
                           }`}
                     >
