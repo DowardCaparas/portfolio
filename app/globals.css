@@ -26,6 +26,10 @@
   @apply dark:text-white
 }
 
+.custom__ring {
+  @apply ring-secondary_gray dark:ring-light_gray ring-1
+}
+
 .border_bottom {
   @apply border-secondary_gray dark:border-light_gray border-b
 }
@@ -38,16 +42,24 @@
   @apply cursor-pointer fill-primary_black dark:fill-primary_gray
 }
 
+.transition_forAll {
+  @apply transition duration-300 ease-in
+}
+
+.center_div {
+ margin: 0 auto;
+}
+
 *{
-  @apply transition duration-300 ease-in-out text-primary_black dark:text-primary_gray
+  @apply transition_forAll text-primary_black dark:text-primary_gray
 }
 
 body {
-  @apply dark:bg-gradient-to-r dark:from-moreDarked_gray dark:to-darked_purple bg-white  
+  @apply dark:bg-primary_black bg-white  
 }
 
 section {
-  @apply w-full mt-48 max-md:mt-52 text-theme-dark mb-28 container__padding
+  @apply w-full my-52 text-theme-dark container__padding
 }
 
 p {

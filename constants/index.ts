@@ -8,9 +8,8 @@ import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
 export const navlinks = [
     {title: 'Home', url: '/', icon: 'homeIcon'},
     {title: 'About', url: '/about' , icon: 'aboutIcon'},
-    {title: 'Services', url: '/myservices' , icon: 'caseIcon'},
+    {title: 'Services', url: '/myservices' , icon: 'serviceIcon'},
     {title: 'Projects', url: '/myprojects' , icon: 'folderIcon'},
-    {title: 'Contact', url: '/contact' , icon: 'phoneIcon'},
 ];
 
 export const socials = [

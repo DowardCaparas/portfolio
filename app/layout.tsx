@@ -20,6 +20,10 @@ export default function RootLayout({
       <body className={montserrat.className}>
        
           <Navbar />
+          <div className='w-60 h-60 rounded-full -z-10 absolute
+           bg-primary_purple blur-3xl bg-opacity-20 mt-36
+          '></div>
+
           {children}
           <Footer />
        

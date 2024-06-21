@@ -3,12 +3,12 @@ import Hero from './Hero';
 import Footer from './Footer';
 import CustomButton from './CustomButton';
 import ProjectCard from './ProjectCard';
-import TextComponent from './TextComponent';
 import Title from './Title';
 import MobileLinks from './MobileLinks';
 import ThemeToggle from './ThemeToggle';
 import Loading from './Loading';
 import AboutData from './AboutData';
+import EmailMe from './EmailMe';
 
 export {
     Navbar,
@@ -16,11 +16,11 @@ export {
     Footer,
     CustomButton,
     ProjectCard,
-    TextComponent,
     Title,
     MobileLinks,
     ThemeToggle,
     Loading,
     AboutData,
+    EmailMe,
 
 }

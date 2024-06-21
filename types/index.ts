@@ -1,9 +1,7 @@
 export interface CustomButtonProps {
     title: string;
     containerStyles?: string;
-    textStyles?: string;
-    handleClick?: () => void;
-
+    icon: string;
 }
 
 export interface PeronalInfoCardProps {

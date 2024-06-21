@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full top-0 container__padding bg-secondary_gray dark:bg-moreDarked_gray 
-      z-10 fixed border_bottom pt-5 md:py-5
+      className="w-full top-0 container__padding bg-white dark:bg-primary_black 
+      z-50 fixed pt-5 md:py-5
      "
     >
       <div className={`${pathname === "/" ? "max-md:flex" : "max-md:hidden"}`}>

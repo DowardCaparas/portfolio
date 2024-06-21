@@ -17,10 +17,11 @@ import mobile from './mobile.svg'
 import code from './code.svg'
 import fast from './fast.svg'
 import hamburger from './hamburger.svg'
-import fileIcon from './fileIcon.svg'
 import moon from './moon.svg'
 import sun from './sun.svg'
 import gitIcon from './gitIcon.svg'
+import fileIcon from './fileIcon.svg'
+import serviceIcon from './serviceIcon.svg'
 
 
 //Skills
@@ -38,6 +39,6 @@ import canva from './canva.svg'
 export {
     arrowup, facebookIcon, hamburger, moon, telegramIcon, linkedinIcon, message, gmail,
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
-    fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon,
-    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, gitIcon,
+    fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon, serviceIcon,
+    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, gitIcon, fileIcon
 }
