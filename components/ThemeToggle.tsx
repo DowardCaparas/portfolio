@@ -41,7 +41,7 @@ const ThemeToggle = () => {
           alt='moon'
           height={20}
           width={20}
-          className='object-contain dark:opacity-90 opacity-0 -mr-7'
+          className='object-contain dark:opacity-90 opacity-0 -mr-7 transition '
        />
        <Image
           src={sun}
@@ -55,12 +55,9 @@ const ThemeToggle = () => {
         dark:border-gray-300 dark:bg-violet-500 justify-center items-center'
       >
        
-        <motion.div    
-          animate={theme === 'dark' ? {x:11} : {x:-11}}
-          transition={{ type: 'tween'}}
-          className='bg-white border-2 border-secondary_gray rounded-full p-2 z-10 
-        '>
-        </motion.div>
+        <div className='bg-white border-2 border-secondary_gray rounded-full p-2 z-10 
+        dark:translate-x-3 -translate-x-3'>
+        </div>
         
       </div>
     </button>
