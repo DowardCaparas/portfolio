@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { aboutData } from "@/constants";
 import Image from "next/image";
+import { cvsuLogo } from "@/public/images";
 
 const AboutData = () => {
   const [infoIndex, setInfoIndex] = useState(0);
@@ -20,8 +21,9 @@ const AboutData = () => {
         </p>
       </div>
 
+    {/*Skills, Awards, Experience, Credentials, School */}
       <div className="flex flex-col md:w-2/3">
-        <div className="flex justify-start items-center gap-6 mb-6">
+        <div className="flex justify-start items-center gap-6 mb-4">
           {aboutData.map((item, index) => (
             <div
               key={index}
@@ -63,6 +65,26 @@ const AboutData = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-10">
+        Education
+        <div className="flex justify-start items-center gap-2 mt-5">
+          <Image
+            src={cvsuLogo}
+            alt="cvsu logo"
+            height={50}
+            width={50}
+            className="object-contain"
+          />
+          <div className="flex flex-col justify-start">
+            <h3>Cavite State University</h3>
+            <p className="text-[12px]">
+              Bachelor of Science in Information Technology
+            </p>
+          </div>
+        </div>
+        </div>
+        
       </div>
     </div>
   );
