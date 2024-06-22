@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-start items-center gap-4 mt-5">
-            <Link href="">
+            <Link href="/myservices">
               <CustomButton
                 title="Services"
                 containerStyles="bg-secondary_gray dark:bg-light_gray active:bg-secondary_gray

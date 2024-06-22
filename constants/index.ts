@@ -15,7 +15,7 @@ export const navlinks = [
 export const socials = [
     {icon: facebookIcon, url: 'https://www.facebook.com/doward.caparas?mibextid=ZbWKwL'},
     {icon: telegramIcon, url: 'https://t.me/dowardcaparas'},
-    {icon: linkedinIcon, url: '#'},
+    {icon: linkedinIcon, url: 'https://www.linkedin.com/in/dounhuwardcaparas/'},
 ];
 
 
