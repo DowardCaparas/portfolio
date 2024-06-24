@@ -22,7 +22,7 @@ const Hero = () => {
             Converting imagination into Digital Reality
           </h1>
           <p className="text-sm">
-            I&apos;m a 24 year old dedicated for crafting innovative solutions
+            I&apos;m a 24-year-old fresh graduate dedicated for crafting innovative solutions
             through coding and design. Let&apos;s create something extraordinary
             together!
           </p>
