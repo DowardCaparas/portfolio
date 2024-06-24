@@ -23,6 +23,26 @@ const AboutData = () => {
 
     {/*Skills, Awards, Experience, Credentials, School */}
       <div className="flex flex-col md:w-2/3">
+
+      <div className="mb-10">
+        Education
+        <div className="flex justify-start items-center gap-2 mt-3">
+          <Image
+            src={cvsuLogo}
+            alt="cvsu logo"
+            height={50}
+            width={50}
+            className="object-contain"
+          />
+          <div className="flex flex-col justify-start">
+            <h3>Cavite State University</h3>
+            <p className="text-[12px]">
+              Bachelor of Science in Information Technology
+            </p>
+          </div>
+        </div>
+        </div>
+        
         <div className="flex justify-start items-center gap-6 mb-4">
           {aboutData.map((item, index) => (
             <div
@@ -66,24 +86,7 @@ const AboutData = () => {
           ))}
         </div>
 
-        <div className="mt-10">
-        Education
-        <div className="flex justify-start items-center gap-2 mt-5">
-          <Image
-            src={cvsuLogo}
-            alt="cvsu logo"
-            height={50}
-            width={50}
-            className="object-contain"
-          />
-          <div className="flex flex-col justify-start">
-            <h3>Cavite State University</h3>
-            <p className="text-[12px]">
-              Bachelor of Science in Information Technology
-            </p>
-          </div>
-        </div>
-        </div>
+       
         
       </div>
     </div>
