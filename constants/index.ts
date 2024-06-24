@@ -86,7 +86,7 @@ export const aboutData = [
             {
                 title: 'Internship:',
                 lists: [
-                    {data: 'Philipphine Integrated Manufacturing and Engineering Solutions Corporation (2023-2024)'},
+                    {data: 'Philippine International Manufacturing and Engineering Services (2023)'},
                 ],
             },
         
