@@ -8,7 +8,6 @@ import MobileLinks from './MobileLinks';
 import ThemeToggle from './ThemeToggle';
 import Loading from './Loading';
 import AboutData from './AboutData';
-import EmailMe from './EmailMe';
 
 export {
     Navbar,
@@ -21,6 +20,4 @@ export {
     ThemeToggle,
     Loading,
     AboutData,
-    EmailMe,
-
 }

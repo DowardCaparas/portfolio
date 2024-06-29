@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileLinks from "./MobileLinks";
 import ThemeToggle from "./ThemeToggle";
+import { githubIcon } from "@/public";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -51,7 +53,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <ThemeToggle />
+            <ThemeToggle />
+          
         </div>
       </div>
 

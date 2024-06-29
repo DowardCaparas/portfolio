@@ -2,7 +2,6 @@ import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { HeroBg } from "@/public/images";
 import Link from "next/link";
-import EmailMe from "./EmailMe";
 import { fileIcon, serviceIcon } from "@/public";
 
 const Hero = () => {
@@ -22,9 +21,9 @@ const Hero = () => {
             Converting imagination into Digital Reality
           </h1>
           <p className="text-sm">
-            I&apos;m a 24-year-old fresh graduate dedicated for crafting innovative solutions
-            through coding and design. Let&apos;s create something extraordinary
-            together!
+            I&apos;m a 24-year-old fresh graduate dedicated for crafting
+            innovative solutions through coding and design. Let&apos;s create
+            something extraordinary together!
           </p>
 
           <div className="flex justify-start items-center gap-4 mt-5">
@@ -62,10 +61,6 @@ const Hero = () => {
             className="object-contain max-lg:w-3/4 w_auto_image z-10"
           />
         </div>
-      </div>
-
-      <div>
-        <EmailMe />
       </div>
     </section>
   );

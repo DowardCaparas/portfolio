@@ -29,7 +29,7 @@ const Footer = () => {
             className="flex flex-col justify-start items-start gap-2 
         max-md:justify-center max-md:items-center"
           >
-            <h3>Connect with me</h3>
+            <h3>Socials</h3>
             <div className="flex gap-2 ">
               {socials.map((item, index) => (
                 <div key={index}>

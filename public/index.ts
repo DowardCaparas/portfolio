@@ -22,6 +22,7 @@ import sun from './sun.svg'
 import gitIcon from './gitIcon.svg'
 import fileIcon from './fileIcon.svg'
 import serviceIcon from './serviceIcon.svg'
+import githubIcon from './githubIcon.svg'
 
 
 //Skills
@@ -40,5 +41,5 @@ export {
     arrowup, facebookIcon, hamburger, moon, telegramIcon, linkedinIcon, message, gmail,
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
     fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon, serviceIcon,
-    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, gitIcon, fileIcon
+    framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, gitIcon, fileIcon, githubIcon
 }

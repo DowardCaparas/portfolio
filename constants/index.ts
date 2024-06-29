@@ -1,9 +1,10 @@
-import { facebookIcon, telegramIcon, linkedinIcon,  userInterface, 
+import { facebookIcon, telegramIcon, linkedinIcon,  userInterface, githubIcon,
          monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon, gitIcon,
          framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon, 
  } from "@/public";
 
 import { ArtokuImage, IDSGadgetsImage } from "@/public/images";
+import { url } from "inspector";
 
 export const navlinks = [
     {title: 'Home', url: '/', icon: 'homeIcon'},
@@ -16,8 +17,8 @@ export const socials = [
     {icon: facebookIcon, url: 'https://www.facebook.com/doward.caparas?mibextid=ZbWKwL'},
     {icon: telegramIcon, url: 'https://t.me/dowardcaparas'},
     {icon: linkedinIcon, url: 'https://www.linkedin.com/in/dounhuwardcaparas/'},
+    {icon: githubIcon, url: 'https://github.com/DowardCaparas'}
 ];
-
 
 export const aboutData = [
     {
