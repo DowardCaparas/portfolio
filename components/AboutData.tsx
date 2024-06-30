@@ -60,16 +60,16 @@ const AboutData = () => {
         </div>
         <div>
           {aboutData[infoIndex].info.map((item, index) => (
-            <div key={index} className="flex max-xl:flex-col gap-x-4">
-              <h4 className="text-sm font-medium">{item.title}</h4>
+            <div key={index} className="flex max-xl:flex-col">
+              <h4 className="text-sm font-medium">{item.title}:</h4>
 
               <div className="flex">
                 {item.lists.map((item, index) => (
                   <div key={index} className="text-[14px] mb-4">
                     {typeof item.data === "string" ? (
-                      <p> {item.data}</p>
+                      <p className="ml-2">{item.data}</p>
                     ) : (
-                      <div className="mr-2 dark:bg-white rounded bg-primary_gray p-1 max-xl:mt-1">
+                      <div className="ml-2 dark:bg-white rounded bg-primary_gray p-1 max-xl:mt-1">
                         <Image
                           src={item.data}
                           alt="icon"
@@ -85,9 +85,7 @@ const AboutData = () => {
             </div>
           ))}
         </div>
-
-       
-        
+      
       </div>
     </div>
   );

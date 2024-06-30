@@ -36,9 +36,10 @@ import htmlIcon from './htmlIcon.svg'
 import cssIcon from './cssIcon.svg'
 import photoshopIcon from './photoshopIcon.svg'
 import canva from './canva.svg'
+import nodejsIcon from './nodejsIcon.svg'
 
 export {
-    arrowup, facebookIcon, hamburger, moon, telegramIcon, linkedinIcon, message, gmail,
+    arrowup, facebookIcon, hamburger, moon, telegramIcon, linkedinIcon, message, gmail, nodejsIcon,
     twitterIcon, chevrondown, chevronup, envelope, plane, monitor, userInterface, mobile, code, 
     fast, sun, chevronleft, chevronright, jsIcon, tsIcon, reactIcon, nextjsIcon, serviceIcon,
     framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, gitIcon, fileIcon, githubIcon
