@@ -16,7 +16,7 @@ const Hero = () => {
         text-theme-dark max-lg:justify-center max-lg:items-center"
         >
           <h4>Hello, I&apos;m Dounhuward B. Caparas</h4>
-          <p className="-mt-2">Frontend Developer</p>
+          <p className="-mt-2">Frontend Web Developer</p>
           <h1 className="md:text-4xl lg:text-6xl text-2xl font-semibold mb-2 mt-4">
             Converting imagination into Digital Reality
           </h1>
