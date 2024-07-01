@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <div className="flex flex-col max-md:text-center gap-4 md:w-1/2">
             <Link href="/" className="font-bold text-xl" aria-label="Home">
-              Dwr.<span className="text-secondary_purple">Dev</span>
+              Doward<span className="text-secondary_purple">Dev</span>
             </Link>
 
             <p>
@@ -29,7 +29,7 @@ const Footer = () => {
             className="flex flex-col justify-start items-start gap-2 
         max-md:justify-center max-md:items-center"
           >
-            <h3>Socials</h3>
+            <h3>Contact me</h3>
             <div className="flex gap-2 ">
               {socials.map((item, index) => (
                 <div key={index}>

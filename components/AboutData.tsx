@@ -43,7 +43,7 @@ const AboutData = () => {
         </div>
         </div>
         
-        <div className="flex justify-start items-center gap-6 mb-4">
+        <div className="flex justify-start items-center gap-6 mb-10">
           {aboutData.map((item, index) => (
             <div
               key={index}
@@ -69,12 +69,12 @@ const AboutData = () => {
                     {typeof item.data === "string" ? (
                       <p className="ml-2">{item.data}</p>
                     ) : (
-                      <div className="ml-2 dark:bg-white rounded bg-primary_gray p-1 max-xl:mt-1">
+                      <div className="ml-2 rounded dark:bg-gray-300 dark:bg-opacity-20 p-1 max-xl:mt-1">
                         <Image
                           src={item.data}
                           alt="icon"
-                          height={30}
-                          width={30}
+                          height={25}
+                          width={25}
                           className="object-contain"
                         />
                       </div>

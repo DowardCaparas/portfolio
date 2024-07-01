@@ -9,7 +9,7 @@ const CustomButton = ({
   return (
     <button
       type="button"
-      className={`${containerStyles} | px-6 py-2 rounded-lg custom__ring`}
+      className={`${containerStyles} | px-6 py-2 rounded-full custom__ring`}
       aria-label={title}
     >
 

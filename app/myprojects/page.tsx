@@ -3,13 +3,10 @@ import { projects } from "@/constants";
 
 const Projects = () => {
   return (
-    <>
-      <Title label="Projects" />
-
-      <section>
-        <ProjectCard projects={projects} />
-      </section>
-    </>
+    <section className="flex flex-col gap-y-14">
+      <Title label="My Works __" />
+      <ProjectCard projects={projects} />
+    </section>
   );
 };
 

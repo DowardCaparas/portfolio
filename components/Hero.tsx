@@ -36,13 +36,6 @@ const Hero = () => {
               />
             </Link>
 
-            <Link href="/CAPARAS_DOUNHUWARD_RESUME.pdf" passHref>
-              <CustomButton
-                title="View CV"
-                containerStyles="dark:hover:bg-secondary_black hover:bg-primary_gray"
-                icon={fileIcon}
-              />
-            </Link>
           </div>
         </div>
 

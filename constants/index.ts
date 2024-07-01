@@ -1,5 +1,5 @@
 import {
-    facebookIcon, telegramIcon, linkedinIcon, userInterface, githubIcon, nodejsIcon,
+    facebookIcon, telegramIcon, linkedinIcon, userInterface, nodejsIcon,
     monitor, fast, mobile, code, jsIcon, tsIcon, reactIcon, nextjsIcon, gitIcon,
     framer, tailwindIcon, htmlIcon, cssIcon, photoshopIcon, canva, fileIcon,
 } from "@/public";
@@ -10,14 +10,14 @@ export const navlinks = [
     { title: 'Home', url: '/', icon: 'homeIcon' },
     { title: 'About', url: '/about', icon: 'aboutIcon' },
     { title: 'Services', url: '/myservices', icon: 'serviceIcon' },
-    { title: 'Projects', url: '/myprojects', icon: 'folderIcon' },
+    { title: 'Portfolio', url: '/myprojects', icon: 'folderIcon' },
+    { title: 'Resume', url: '/myresume', icon: 'fileIcon' },
 ];
 
 export const socials = [
     { icon: facebookIcon, url: 'https://www.facebook.com/doward.caparas?mibextid=ZbWKwL' },
     { icon: telegramIcon, url: 'https://t.me/dowardcaparas' },
     { icon: linkedinIcon, url: 'https://www.linkedin.com/in/dounhuwardcaparas/' },
-    { icon: githubIcon, url: 'https://github.com/DowardCaparas' }
 ];
 
 export const aboutData = [

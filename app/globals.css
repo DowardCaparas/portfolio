@@ -26,10 +26,6 @@
   @apply dark:text-white
 }
 
-.custom__ring {
-  @apply ring-secondary_gray dark:ring-light_gray ring-1
-}
-
 .border_bottom {
   @apply border-secondary_gray dark:border-light_gray border-b
 }
@@ -55,9 +51,83 @@ body {
 }
 
 section {
-  @apply w-full my-52 text-theme-dark container__padding
+  @apply w-full my-28 text-theme-dark container__padding
 }
 
 p {
   @apply text-sm dark:text-gray-300 text-paragraph
 }
+
+/* styles.css */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*Line*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #2E274B;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.container {
+  padding: 0 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: -9px;
+}
+
+.container.right {
+  left: 50%;
+}
+
+/*Dot*/
+.container::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -17.5px;
+  background-color: #4D3ABC;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -7px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 640px) {
+  .timeline::after {
+    width: 1px; /* Adjust the width for mobile screens */
+    left: 0; /* Center the line for mobile screens */
+  }
+
+  .container.left,
+  .container.right {
+    left: 0;
+  }
+
+  .container.right::after {
+    left: 0;
+  }
+
+  .container::after {
+    left: 0%; /* Center the circle indicator */
+    margin-left: -7px; /* Adjust the position of the circle indicator */
+  }
+}
+
+

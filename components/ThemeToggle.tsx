@@ -50,16 +50,6 @@ const ThemeToggle = () => {
           width={20}
           className='object-contain dark:opacity-0 opacity-90'
        />
-      <div
-        className='flex rounded-full w-12 bg-secondary_gray border-2 border-gray-500 
-        dark:border-gray-300 dark:bg-violet-500 justify-center items-center'
-      >
-       
-        <div className='bg-white border-2 border-secondary_gray rounded-full p-2 z-10 
-        dark:translate-x-3 -translate-x-3'>
-        </div>
-        
-      </div>
     </button>
   );
 };

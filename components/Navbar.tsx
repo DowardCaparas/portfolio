@@ -5,24 +5,44 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileLinks from "./MobileLinks";
 import ThemeToggle from "./ThemeToggle";
-import { githubIcon } from "@/public";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className="w-full top-0 container__padding bg-white dark:bg-primary_black 
+      className={`w-full top-0 container__padding 
       z-50 fixed pt-5 md:py-5
-     "
+
+      ${scrolled 
+        ? 'bg-white dark:bg-primary_black bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md shadow-md dark:shadow-primary_purple' 
+        : ''}
+
+     `}
     >
       <div className={`${pathname === "/" ? "max-md:flex" : "max-md:hidden"}`}>
         <div className="w-full flex justify-between items-center">
           {/*Logo */}
           <div className="flex max-md:flex-row-reverse justify-center items-center gap-6">
             <h3 className="font-bold text-xl mr-3 text-theme-dark">
-              Dwr.<span className=" text-secondary_purple">Dev</span>
+              Doward<span className=" text-secondary_purple">Dev</span>
             </h3>
 
             {/*Links */}
