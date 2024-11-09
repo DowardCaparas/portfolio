@@ -57,7 +57,7 @@ const navToggleButton = document.querySelector(".nav_toggle_button");
 const navPanel = document.querySelector(".nav_panel");
 const navToggleIcon = createImageElement(
   "",
-  `../assets/icons/${iconName}.svg`,
+  `assets/icons/${iconName}.svg`,
   "toggle icon",
   "35px",
   "35px",
