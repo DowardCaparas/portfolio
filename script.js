@@ -111,7 +111,7 @@ techStacksArray.forEach((element, index) => {
   // Create an img element for each tech stack
   const techImage = createImageElement(
     "tech_stack_icon",
-    `./assets/techstacks/${element}.svg`,
+    `assets/techstacks/${element}.svg`,
     element.name,
     "50px",
     "50px",
@@ -156,7 +156,7 @@ const educationCardsDiv = document.getElementById("education_cards_div");
 educationArray.forEach((element) => {
   const educationIcon = createImageElement(
     "education_icon",
-    "../assets/icons/graduationCap.svg",
+    "assets/icons/graduationCap.svg",
     "graduation cap",
     "50px",
     "50px",
@@ -205,7 +205,7 @@ certificates.forEach((element) => {
   // create image
   const certificateImage = createImageElement(
     "certificate_image",
-    `../assets/images/${element.name}.webp`,
+    `assets/images/${element.name}.webp`,
     element.name,
     "100%",
     "320px",
@@ -350,7 +350,7 @@ const renderProjects = (projects) => {
 
     // Image
     const projectImage = createElement("img", "project_image");
-    projectImage.src = `../assets/images/${element.name}.webp`;
+    projectImage.src = `assets/images/${element.name}.webp`;
     projectImage.alt = element.name;
     projectImage.style.width = "100%";
     projectImage.style.height = "280px";
@@ -378,7 +378,7 @@ const renderProjects = (projects) => {
 
     const projectGitHub = createImageElement(
       "project_github",
-      "../assets/icons/github.svg",
+      "assets/icons/github.svg",
       "GitHub",
       "",
       ""
@@ -389,7 +389,7 @@ const renderProjects = (projects) => {
 
     const projectLiveDemo = createImageElement(
       "project_live_demo",
-      "../assets/icons/arrowup.svg",
+      "assets/icons/arrowup.svg",
       "Live Demo",
       "",
       ""
@@ -488,7 +488,7 @@ socialsArray.forEach((element) => {
   // add image inside the anchor tag
   const anchorTagImg = createImageElement(
     "anchor_tag_image",
-    `../assets/icons/${element.name}.svg`,
+    `assets/icons/${element.name}.svg`,
     `${element.name} icon`,
     "30px",
     "30px",
