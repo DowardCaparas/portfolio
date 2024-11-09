@@ -1,0 +1,101 @@
+/* Project section */
+#project_cards {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    margin-top: 70px;
+  }
+
+  .project_card {
+    background-color: #fff;
+    border-radius: 12px;
+    filter: drop-shadow(0 5px 5px #dddddd);
+    transition: filter 0.3s ease; /* Add this for the transition effect */
+    overflow: hidden;
+  }
+
+    /* card animation when hover */
+    .project_card:hover {
+      filter: drop-shadow(0 10px 10px #c5c5c5);
+    }
+  
+  .project_image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card_name_type {
+    text-align: start;
+  }
+  
+  .card_text_and_button_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card_buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .project_details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project_github, .project_live_demo {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  
+  .project_tech_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5em;
+  }
+  
+  .project_description {
+    font-size: 0.875rem;
+  }
+
+  .project_technology {
+    background-color: #f3f3f3;
+    border-radius: 999px;
+    color: #625577;
+    border: 1px solid #e7e7e7;
+    padding: 7px;
+    font-size: 0.75rem;
+    width: 110px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .button_div {
+    display: grid;
+  }
+
+  #project_collapse_button {
+    padding: 14px 35px;
+    background-color: #000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 200px;
+    border: none;
+    place-self: center;
+  }
+  
+  #project_collapse_button:hover {
+    background-color: #333;
+  }
+
+  #project_collapse_button:active {
+    background-color: #000;
+  }

@@ -1,0 +1,23 @@
+/* Certificate section */
+
+#certificate_images {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 3em 1em;
+    place-items: center;
+}
+.certificate_image {
+    border-radius: 15px;
+    padding: 5px;
+    max-width: 500px;
+}
+.certificate_title {
+    text-align: center;
+}
+
+.certificate_card:hover .certificate_image {
+    border-radius: 0; /* Remove border-radius on hover */
+    transition: transform 0.2s;
+    transform: scale(1.01);
+}
