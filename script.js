@@ -111,7 +111,7 @@ techStacksArray.forEach((element, index) => {
   // Create an img element for each tech stack
   const techImage = createImageElement(
     "tech_stack_icon",
-    `../assets/techstacks/${element}.svg`,
+    `./assets/techstacks/${element}.svg`,
     element.name,
     "50px",
     "50px",
