@@ -10,6 +10,11 @@ footer {
     justify-content: space-between;
     gap: 2rem;
 }
+.footer_paragraph{
+    color: #D1D5DB;
+    font-size: 0.875rem;
+    margin-top: 20px;
+  }
 
 .footer_message {
     width: 30%;
@@ -22,7 +27,7 @@ footer {
 }
 
 .footer_copyright {
-    margin-top: 70px;
+    margin-top: 3rem;
     font-size: 0.75rem;
 }
 

@@ -14,7 +14,7 @@
   }
   
   @keyframes up {
-    from { top: 130px }
+    from { top: 100px }
     to { top: 0px }
   }
   
@@ -28,12 +28,6 @@
     color: #4B5563;
   }
   
-  .footer_paragraph, .footer_copyright {
-    color: #D1D5DB;
-    font-size: 0.875rem;
-    margin-top: 20px;
-  }
-  
   section {
     line-height: 1;
     padding: 125px 0;
@@ -41,6 +35,17 @@
   
   li {
     list-style: none;
+  }
+
+  .custom_button {
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 1rem 2rem; 
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+  .custom_button:hover {
+    filter: drop-shadow(0 5px 8px #c9c9c9);
   }
   
   .text-center {

@@ -4,7 +4,7 @@ nav {
     right: 0;
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     padding: 0.5px 0;
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
     backdrop-filter: blur(18px); /* Apply the blur effect */
@@ -76,9 +76,9 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 14px;
     position: relative; 
-    animation: up 0.8s ease-in-out; /* hero_section animation */
+    animation: up 1s ease-in-out;
   }
   
   .hero_image {
@@ -86,7 +86,7 @@ nav {
     width: 140px;
     box-shadow: 0 2px 2px 2px #4b5563;
     background-color: #00226c;
-    animation: animate 2s infinite linear;
+    animation: animate 4s infinite linear;
     margin-bottom: 20px;
   }
   
@@ -125,28 +125,6 @@ nav {
     display: flex;
     gap: 15px;
     margin-top: 15px;
-  }
-  
-  .hero_buttons button:hover {
-    cursor: pointer;
-    filter: drop-shadow(0 5px 8px #c9c9c9);
-  }
-  
-  .hero_buttons > #know_more_button {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .hero_buttons > #contact_button {
-    background-color: #fff;
-  }
-  
-  .hero_section button {
-    padding: 14px 35px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
   }
   
   #hero_tech_stacks {

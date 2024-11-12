@@ -1,176 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Dounhuward Caparas portfolio using HTML, CSS, and JavaScript"
-    />
-    <title>Doward Caparas</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
-  </head>
 
-  <body>
-    <main>
-      <nav>
-        <div class="container_padding nav_container">
-          <div class="nav_logo">
-            <img src="./assets/icons/code.svg" alt="code icon" />
-            <span class="text-lg font-bold">DowardC</span>
-          </div>
-          <div class="nav_links">
-            <a href="#about">About</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#projects">Projects</a>
-          </div>
-          <div class="nav_toggle_button">
-            <!-- toggle icon goes here -->
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dounhuward Caparas portfolio using HTML, CSS, and JavaScript" />
+  <title>Doward Caparas</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
 
-        <div class="nav_panel hidden">
-          <div class="nav_links_panel">
-            <a href="#about">About</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#projects">Projects</a>
-          </div>
+<body>
+  <main>
+    <nav>
+      <div class="container_padding nav_container">
+        <div class="nav_logo">
+          <img src="./assets/icons/code.svg" alt="code icon" />
+          <span class="text-lg font-bold">DowardC</span>
         </div>
-      </nav>
+        <div class="nav_links">
+          <a href="#about">About</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="nav_toggle_button">
+          <!-- toggle icon goes here -->
+        </div>
+      </div>
 
-      <!-- Hero section -->
-      <section class="container_padding text-center">
-        <div class="hero_section">
-          <img
-            src="./assets/images/Doward.webp"
-            alt="my profile"
-            class="hero_image blob"
-          />
-          <span>Hi There 👋, I&apos;m Doward Caparas</span>
-          <h1 class="text-6xl">Front-end Developer</h1>
-          <p class="text-lg">
-            My goal each day is to be better than I was yesterday. I love
-            learning and mastering new technologies.
-          </p>
-          <div class="hero_buttons">
-            <button id="know_more_button">Know more</button>
-            <button id="contact_button">Contact</button>
-          </div>
-          <!-- tech stacks -->
-          <div id="hero_tech_stacks"></div>
+      <div class="nav_panel hidden">
+        <div class="nav_links_panel">
+          <a href="#about">About</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#projects">Projects</a>
         </div>
-      </section>
+      </div>
+    </nav>
 
-      <!-- About section -->
-      <section id="about" class="about_section">
-        <div class="container_padding">
-          <h1 class="section_title">About me</h1>
-          <div class="section_sub_paragraph">
-            <p>
-              Hi, I&apos;m Dounhuward Caparas, a front-end web developer from
-              the Philippines. I build responsive web apps using ReactJS and
-              Tailwind CSS. I&apos;m currently sharpening my skills in front-end
-              development with NEXT.js and TypeScript, and I&apos;ve been
-              exploring UI libraries to improve efficiency and responsiveness.
-              While I&apos;m focused on front-end work right now, I&apos;m also
-              looking forward to learning more about back-end development in the
-              future.
-            </p>
-            <br />
-            <p>
-              I built this portfolio without any frameworks or libraries for
-              now, keeping it simple with just HTML, CSS, and JavaScript to
-              avoid over-engineering. The goal is to showcase my projects and
-              journey. In the future, if I add a blog, extra pages, or features
-              that are harder to implement without frameworks, I'll switch to
-              using frameworks to speed up development and make it easier to
-              create reusable components.
-            </p>
-            <br />
-            <p>
-              My tech stack includes Next.js, React, JavaScript, TypeScript,
-              HTML, CSS, jQuery, Sass, and PHP. I also built a capstone project
-              using C# and have a certificate for it. While I know how to use
-              Bootstrap, I specialize in using Tailwind CSS. I have basic
-              knowledge of Java, C++, and PHP.
-            </p>
-          </div>
-          <!-- education -->
-          <div class="education">
-            <h3 class="text-center">Education</h3>
-            <div id="education_cards_div">
-              <!-- generate education card -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certificate section -->
-      <section id="certificates" class="certificate_section">
-        <div class="container_padding">
-          <h1 class="section_title">Certificates</h1>
-          <p class="section_sub_paragraph">
-            I am proud to have earned the following certifications, which
-            reflect my commitment to continuous learning and professional
-            development
-          </p>
-          <div id="certificate_images">
-            <!-- generate certificate images -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Project section -->
-      <section id="projects" class="project_section">
-        <div class="container_padding">
-          <h1 class="section_title">Projects</h1>
-          <p class="section_sub_paragraph">
-            This is my journey diving into web development, and along the way, I
-            built my capstone project. It&apos;s been fun and challenging
-            learning new skills.
-          </p>
-          <div id="project_cards">
-            <!-- generate cards -->
-          </div>
-          <div class="button_div">
-            <button id="project_collapse_button"></button>
-          </div>
-        </div>
-      </section>
-
-      <footer id="contact">
-        <div class="container_padding footer_container">
-          <div class="footer_message">
-            <h3>Doward Caparas</h3>
-            <p class="footer_paragraph">
-              I built this website without using any frameworks to keep it
-              simple and avoid over-engineering. I used only HTML, CSS, and
-              JavaScript.
-            </p>
-          </div>
-          <div class="footer_connect_socials">
-            <h3>Connect</h3>
-            <div class="footer_socials"></div>
-          </div>
-        </div>
-        <p class="text-center footer_copyright">
-          Copyright &copy; 2024 Dounhuward Caparas
+    <!-- Hero section -->
+    <!-- Hero section -->
+    <section class="container_padding text-center">
+      <div class="hero_section">
+        <img src="./assets/images/Doward.webp" alt="my profile" class="hero_image blob" />
+        <span>Hi There 👋, I&apos;m Doward Caparas</span>
+        <h1 class="text-6xl">Front-end Developer</h1>
+        <p class="text-lg">
+          My goal each day is to be better than I was yesterday. I love
+          learning and mastering new technologies.
         </p>
-      </footer>
-    </main>
-  </body>
-  <script src="script.js"></script>
-  <script>
-    window.embeddedChatbotConfig = {
+        <div class="hero_buttons">
+          <!-- buttons goes here -->
+        </div>
+        <!-- tech stacks -->
+        <div id="hero_tech_stacks"></div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about_section">
+      <div class="container_padding">
+        <h1 class="section_title">About me</h1>
+        <div class="section_sub_paragraph">
+          <p>
+            Hi, I&apos;m Dounhuward Caparas, a front-end web developer from
+            the Philippines. I build responsive web apps using ReactJS and
+            Tailwind CSS. I&apos;m currently sharpening my skills in front-end
+            development with NEXT.js and TypeScript, and I&apos;ve been
+            exploring UI libraries to improve efficiency and responsiveness.
+            While I&apos;m focused on front-end work right now, I&apos;m also
+            looking forward to learning more about back-end development in the
+            future.
+          </p>
+          <br />
+          <p>
+            I built this portfolio without any frameworks or libraries for
+            now, keeping it simple with just HTML, CSS, and JavaScript to
+            avoid over-engineering. The goal is to showcase my projects and
+            journey. In the future, if I add a blog, extra pages, or features
+            that are harder to implement without frameworks, I'll switch to
+            using frameworks to speed up development and make it easier to
+            create reusable components.
+          </p>
+          <br />
+          <p>
+            My tech stack includes Next.js, React, JavaScript, TypeScript,
+            HTML, CSS, jQuery, Sass, and PHP. I also built a capstone project
+            using C# and have a certificate for it. While I know how to use
+            Bootstrap, I specialize in using Tailwind CSS. I have basic
+            knowledge of Java, C++, and PHP.
+          </p>
+        </div>
+        <!-- education -->
+        <div class="education">
+          <h3 class="text-center text-xl">Education</h3>
+          <div id="education_cards_div">
+            <!-- generate education card -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate section -->
+    <section id="certificates" class="certificate_section">
+      <div class="container_padding text-center">
+        <h1 class="section_title">Certificates</h1>
+        <p class="section_sub_paragraph">
+          I am proud to have earned the following certifications, which
+          reflect my commitment to continuous learning and professional
+          development
+        </p>
+      </div>
+      <!-- Certificate Accordion -->
+      <div id="certificate_accordion" class="container_padding">
+          <!-- accordion container goes here -->
+      </div>
+    </section>
+
+    <!-- Project section -->
+    <section id="projects" class="project_section">
+      <div class="container_padding">
+        <h1 class="section_title">Projects</h1>
+        <p class="section_sub_paragraph">
+          This is my journey diving into web development, and along the way, I
+          built my capstone project. It&apos;s been fun and challenging
+          learning new skills.
+        </p>
+        <div id="project_cards">
+          <!-- generate cards -->
+        </div>
+        <div class="button_div">
+          <button id="project_collapse_button"></button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container_padding footer_container">
+        <div class="footer_message">
+          <h3>Doward Caparas</h3>
+          <p class="footer_paragraph">
+            I built this website without using any frameworks to keep it
+            simple and avoid over-engineering. I used only HTML, CSS, and
+            JavaScript.
+          </p>
+        </div>
+        <div class="footer_connect_socials">
+          <h3>Connect</h3>
+          <div class="footer_socials"></div>
+        </div>
+      </div>
+      <p class="text-center footer_copyright">
+        Copyright &copy; 2024 Dounhuward Caparas
+      </p>
+    </footer>
+
+
+  </main>
+</body>
+
+<script src="script.js"></script>
+<script>
+  window.embeddedChatbotConfig = {
     chatbotId: "cOWIZgQezkVlIHKguM5Kl",
     domain: "www.chatbase.co"
-    }
-    </script>
-    <script
-    src="https://www.chatbase.co/embed.min.js"
-    chatbotId="cOWIZgQezkVlIHKguM5Kl"
-    domain="www.chatbase.co"
-    defer>
-    </script>
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="cOWIZgQezkVlIHKguM5Kl" domain="www.chatbase.co" defer>
+</script>
+
 </html>

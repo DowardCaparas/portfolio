@@ -1,3 +1,7 @@
+// window.addEventListener("load", function () {
+//   window.scrollTo({ top: 0 }); // Scroll to the top of the page
+// });
+
 // reusable function to create an element
 const createElement = (tag, className, content = "") => {
   // el stands for element
@@ -8,7 +12,14 @@ const createElement = (tag, className, content = "") => {
 };
 
 // reusable function to create an image element
-const createImageElement = (className, src, alt, width, height, cursor) => {
+const createImageElement = (
+  className,
+  src,
+  alt,
+  width = "",
+  height = "",
+  cursor = ""
+) => {
   // el stands for element
   const el = document.createElement("img");
   if (className) el.classList.add(className);
@@ -19,9 +30,22 @@ const createImageElement = (className, src, alt, width, height, cursor) => {
   if (cursor) el.style.cursor = cursor;
   return el;
 };
+// reusable button component for hero section
+const createHeroButton = (text, bgColor, color, sectionId) => {
+  // el stands for  element
+  const heroButton = document.createElement("button");
+  heroButton.classList.add("custom_button");
+  heroButton.innerText = text;
+  heroButton.style.backgroundColor = bgColor;
+  heroButton.style.color = color;
+  heroButton.addEventListener("click", () => {
+    const sectionID = document.getElementById(sectionId);
+    sectionID.scrollIntoView({ block: "start" });
+  });
+  return heroButton;
+};
 
 // Hero section --
-
 // enable click to nav logo as home button
 const navLogo = document.querySelector(".nav_logo");
 navLogo.addEventListener("click", () => {
@@ -29,20 +53,14 @@ navLogo.addEventListener("click", () => {
 });
 
 // hero buttons
-// --know more button (about)
-const knowMoreButton = document.getElementById("know_more_button");
-knowMoreButton.addEventListener("click", () => {
-  const aboutSection = document.getElementById("about");
-  aboutSection.scrollIntoView({ block: "start" }); //Align the about section at the top of the viewport
-});
+const heroButtons = document.querySelector(".hero_buttons");
+const knowMore = createHeroButton("Know more", "#000", "#fff", "about");
+const contact = createHeroButton("Contact", "#fff", "#000", "contact");
 
-// --contact button
-const contactButton = document.getElementById("contact_button");
-contactButton.addEventListener("click", () => {
-  const footerElementContact = document.getElementById("contact");
-  footerElementContact.scrollIntoView({ block: "start" }); //Align the footer at the top of the viewport
-});
+// append the hero buttons
+heroButtons.append(knowMore, contact);
 
+// add border bottom to the nav when the user scrolled
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
   // Check if the page is scrolled down by at least 10px
@@ -114,8 +132,7 @@ techStacksArray.forEach((element, index) => {
     `./assets/techstacks/${element}.svg`,
     element.name,
     "50px",
-    "50px",
-    ""
+    "50px"
   );
   techImage.style.position = "relative";
   techImage.style.animation = `upAndDown 2s linear infinite ${index * -0.03}s`;
@@ -159,8 +176,7 @@ educationArray.forEach((element) => {
     "./assets/icons/graduationCap.svg",
     "graduation cap",
     "50px",
-    "50px",
-    ""
+    "50px"
   );
 
   const educationLevel = createElement(
@@ -179,48 +195,35 @@ educationArray.forEach((element) => {
   educationCardsDiv.appendChild(educationCard);
 });
 
-// Certificate section --
+// Certificate section
 // Certificates
-const certificates = [
+const certificatesArray = [
   {
-    name: "Foundational C-Sharp with Microsoft",
-    label: `Object-Oriented Programming, data structures, algorithm, syntax, and error handling.`,
+    title: "Foundational C-Sharp with Microsoft",
+    url: "https://www.freecodecamp.org/certification/Dounhuward_B_Caparas/foundational-c-sharp-with-microsoft",
   },
   {
-    name: "Responsive Web Design",
-    label: `Training to create responsive websites that adapt to different screen sizes.`,
-  },
-  {
-    name: "Best Capstone",
-    label: `My role is both programmer and UI/UX designer.`,
+    title: "Responsive Web Design",
+    url: "https://www.freecodecamp.org/certification/Dounhuward_B_Caparas/responsive-web-design",
   },
 ];
 
-const certificateImagesDiv = document.getElementById("certificate_images");
+const certificateAccordion = document.getElementById("certificate_accordion");
 
-certificates.forEach((element) => {
-  // create div card
-  const certificateCard = createElement("div", "certificate_card");
+certificatesArray.forEach((element) => {
+  const certificateTitle = createElement("h3", "certificate_title");
+  const certificateLink = createElement("button", "certificate_link");
+  const accordionContainer = createElement("div", "accordion_container");
 
-  // create image
-  const certificateImage = createImageElement(
-    "certificate_image",
-    `./assets/images/${element.name}.webp`,
-    element.name,
-    "100%",
-    "320px",
-    "pointer"
+  certificateTitle.textContent = element.title;
+
+  certificateLink.innerText = "View";
+  certificateLink.addEventListener("click", () => 
+    window.open(element.url, "_blank")
   );
 
-  // create title and paragraph for certificates
-  const certificateTitle = createElement(
-    "h3",
-    "certificate_title",
-    element.name
-  );
-
-  certificateCard.append(certificateImage, certificateTitle);
-  certificateImagesDiv.appendChild(certificateCard);
+  accordionContainer.append(certificateTitle, certificateLink);
+  certificateAccordion.appendChild(accordionContainer);
 });
 
 // Project section --
@@ -379,9 +382,7 @@ const renderProjects = (projects) => {
     const projectGitHub = createImageElement(
       "project_github",
       "./assets/icons/github.svg",
-      "GitHub",
-      "",
-      ""
+      "GitHub"
     );
     projectGitHub.addEventListener("click", () =>
       window.open(element.github, "_blank")
@@ -390,9 +391,7 @@ const renderProjects = (projects) => {
     const projectLiveDemo = createImageElement(
       "project_live_demo",
       "./assets/icons/arrowup.svg",
-      "Live Demo",
-      "",
-      ""
+      "Live Demo"
     );
     projectLiveDemo.addEventListener("click", () =>
       window.open(element.url, "_blank")
@@ -431,7 +430,7 @@ const renderProjects = (projects) => {
 };
 
 const startIndex = 0;
-let endIndex = 4;
+let endIndex = 6;
 let isAllProjectShown = false;
 let slicedProjectsArray = projectsArray.slice(startIndex, endIndex); // load first 6 projects
 projectCollapseButton.innerText = "View all";
@@ -445,7 +444,7 @@ const loadProjects = () => {
     projectCollapseButton.innerText = "See less";
     isAllProjectShown = true;
   } else {
-    endIndex = 4;
+    endIndex = 6;
     slicedProjectsArray = projectsArray.slice(startIndex, endIndex);
     // Re-render the updated project list
     renderProjects(slicedProjectsArray);
