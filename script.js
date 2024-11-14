@@ -459,15 +459,37 @@ projectCollapseButton.addEventListener("click", loadProjects);
 renderProjects(slicedProjectsArray);
 
 // Footer section --
+// Profiles
+const profilesArray = [
+  {
+    name: "HackerRank",
+    url: "",
+  },
+  {
+    name: "Codewars",
+    url: "",
+  },
+  {
+    name: "Upwork",
+    url: "https://www.upwork.com/freelancers/~01dd74b4cdc23f86b7?mp_source=share",
+  },
+];
+
+const footerProfilesDiv = document.querySelector(".footer_profiles");
+
+profilesArray.forEach((element) => {
+  const profileLink = createElement("a", "profile_link", element.name);
+  profileLink.addEventListener("click", () => window.open(element.url, "_blank"));
+  
+  footerProfilesDiv.appendChild(profileLink);
+});
+
+// Contact
 // Socials
 const socialsArray = [
   {
     name: "facebook",
     url: "https://www.facebook.com/doward.caparas?mibextid=ZbWKwL",
-  },
-  {
-    name: "gmail",
-    url: "mailto:dounhuward.c@gmail.com",
   },
   {
     name: "tiktok",
@@ -495,6 +517,5 @@ socialsArray.forEach((element) => {
   );
 
   anchorTag.appendChild(anchorTagImg);
-
   footerSocialsDiv.appendChild(anchorTag);
 });

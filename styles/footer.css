@@ -10,14 +10,40 @@ footer {
     justify-content: space-between;
     gap: 2rem;
 }
-.footer_paragraph{
+
+.footer_paragraph {
     color: #D1D5DB;
     font-size: 0.875rem;
     margin-top: 20px;
-  }
+}
 
 .footer_message {
     width: 30%;
+}
+
+.footer_profiles,
+.footer_contact,
+.footer_socials {
+    margin-top: 20px;
+}
+
+.footer_profiles, .footer_contact {
+    display: inline-grid;
+    gap: 0.5em;
+}
+
+.footer_profiles a {
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.footer_contact span{
+    font-size: 0.75rem;
+}
+
+.footer_contact img {
+    cursor: pointer;
+    width: 1.7rem;
 }
 
 .footer_socials {
@@ -28,13 +54,12 @@ footer {
 
 .footer_copyright {
     margin-top: 3rem;
-    font-size: 0.75rem;
 }
 
 @media (max-width: 1024px) {
     .footer_message {
         width: 40%;
-        
+
     }
 }
 
@@ -43,11 +68,13 @@ footer {
         width: 60%;
         text-align: center;
     }
+
     .footer_container {
         flex-direction: column;
         place-items: center;
     }
-    .footer_connect_socials h3{
+
+    .footer_connect_socials h3 {
         text-align: center;
     }
 }
